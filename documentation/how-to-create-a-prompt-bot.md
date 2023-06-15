@@ -1,20 +1,18 @@
 # How to create a prompt bot
 
-## How to get started?
+## Step 1: Open the create bot page
 
 If you are on web, go to poe.com and click on the "Create a bot" button on the sidebar. Alternatively you can navigate directly to [poe.com/create\_bot](https://poe.com/create\_bot). If you are using the mobile app, click on the hamburger in the top-left to open the sidebar and then click on the "Create a bot" button.
 
 <figure><img src="../.gitbook/assets/image (3).png" alt="" width="258"><figcaption></figcaption></figure>
 
-## Customize how your bot will look
+## Step 2: Customize how your bot will look
 
 #### Select a picture (Optional)
 
 This helps give your bot a distinctive look
 
 <figure><img src="../.gitbook/assets/image.png" alt="" width="254"><figcaption></figcaption></figure>
-
-
 
 #### Select a bot name
 
@@ -28,7 +26,7 @@ A piece of text that describes your bot. This will be shown to people who land o
 
 <figure><img src="../.gitbook/assets/image (4).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## Define your bot's behavior
+## Step 3: Define your bot's behavior
 
 #### Select a base bot
 
@@ -48,7 +46,7 @@ This is message that the bot starts with when users land on the bot page. This c
 
 <figure><img src="../.gitbook/assets/image (10).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## Select what advanced features you need
+## Step 4: Decide if you need any advanced features (Optional)
 
 <figure><img src="../.gitbook/assets/image (11).png" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -64,6 +62,6 @@ Allows messages with the bot to be rendered using Markdown
 
 Whether nouns and entities in the bot response should be highlighted and linkified. Tapping or clicking on these links generates a message to the bot of the form "Tell me more about {entity}"
 
-## Create bot
+## Step 5: Create bot
 
 After filling all the required fields, click on the "Create bot" button at the bottom. That's it! You should get taken to your new bot's page after which you can start chatting with your bot or share it with your friends.
