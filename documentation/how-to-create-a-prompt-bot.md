@@ -20,7 +20,7 @@ This helps give your bot a distinctive look
 
 The name is a unique identifier and can use 4-15 alphanumeric characters. The field will come prefilled with a randomly generated name that you can leave as it is. You can always come back and update the name later.
 
-<figure><img src="../.gitbook/assets/image (11).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9).png" alt="" width="563"><figcaption></figcaption></figure>
 
 #### Select a bot description (Optional)
 
@@ -34,7 +34,7 @@ A piece of text that describes your bot. This will be shown to people who land o
 
 This is the underlying bot that your prompt bot is powered by. The currently supported options are chatGPT and Claude-Instant.
 
-<figure><img src="../.gitbook/assets/image (5).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6).png" alt="" width="563"><figcaption></figcaption></figure>
 
 #### Provide a prompt
 
@@ -46,11 +46,11 @@ Describe what your bot should do or how it should behave. You can also use the "
 
 This is message that the bot starts with when users land on the bot page. This can be used to explain to the users what the bot does or get necessary information that the bot needs to get started.
 
-<figure><img src="../.gitbook/assets/image (9).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ## Select what advanced features you need
 
-<figure><img src="../.gitbook/assets/image (10).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (11).png" alt="" width="563"><figcaption></figcaption></figure>
 
 #### Suggest replies
 
