@@ -1,8 +1,8 @@
 # API Bots - Quick start
 
-This tutorial will help you quickly get an API bot running with the help of our [starter code](https://github.com/poe-platform/api-bot-tutorial). We will go over how to deploy this code and how to integrate your bot server with Poe. For more information on Poe API bots, see [poe-protocol](https://github.com/poe-platform/poe-protocol).
+This tutorial will help you quickly get an API bot running with the help of our [starter code](https://github.com/poe-platform/api-bot-tutorial). We will go over how to deploy this code and how to integrate your bot server with Poe. For more information on Poe API bots, check out the [poe-protocol-specification.md](poe-protocol-specification.md "mention").
 
-## Step 1: Deploying your bot
+## Deploying your bot
 
 We will go over three ways of deploying your bot.
 
@@ -53,17 +53,17 @@ We will go over three ways of deploying your bot.
   * `git push heroku main`
 * Now your app should be online at `https://$YOUR_APP.herokuapp.com/`. This is your bot server URL.
 
-### Integrating with Poe
+## Integrating with Poe
 
 Once you have a bot running under a publicly accessible URL, it is time to connect it to Poe. You can do that on your desktop by going to [the bot creation form](https://poe.com/create\_bot?api=1). You can customize how your bot looks by providing a picture, name and description. After you fill out the server URL, click "create bot", your bot should be ready for use in all Poe clients!
 
-### Where to go from here
+## Where to go from here
 
 * The starter code by default uses the EchoBot which is a simple bot with no AI capabilities. You can comment/uncomment any of the other example bots to try them out or build off of them.
 * Refer to [poe-protocol](https://github.com/poe-platform/poe-protocol) to understand the full capabilities offered by Poe API bots and see some additional tools and samples, including:
   * The [specification](https://github.com/poe-platform/poe-protocol/blob/main/spec.md) that details precisely how API bots work
   * The [fastapi-poe](https://pypi.org/project/fastapi-poe/) library, which you can use as a base for creating Poe bots
 
-### Questions?
+## Questions?
 
 Join us on [Discord](https://discord.gg/TKxT6kBpgm) with any questions.

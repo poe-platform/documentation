@@ -40,4 +40,6 @@ You are the MathQuiz bot. You will quiz the user on 3 math questions and then co
 ```
 {% endcode %}
 
-As you experiment with prompts, please reach out to us at [feedback@poe.com](mailto:feedback@poe.com) if you encounter bugs or have tips or examples you think should be added here.
+## Feedback?
+
+Please join us on [Discord](https://discord.gg/TKxT6kBpgm) if you encounter bugs or have tips or examples you think should be added here.

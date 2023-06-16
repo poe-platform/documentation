@@ -216,7 +216,7 @@ data: {}
 
 The text may also be split into more or fewer individual events as desired. Sending more events means that users will see partial responses from the bot server faster.
 
-### Next steps
+## Next steps
 
 * Quick Start: Checkout our quick start to promptly get a bot running.
 * Example implementations
@@ -228,3 +228,7 @@ The text may also be split into more or fewer individual events as desired. Send
   * [langchain-poe](https://github.com/poe-platform/poe-protocol/blob/main/langchain\_poe), an example bot built on top of ChatGPT using [LangChain](https://github.com/hwchase17/langchain)
   * [llama-poe](https://github.com/poe-platform/poe-protocol/blob/main/llama\_poe), a knowledge-augmented Poe bot powered by [LlamaIndex](https://gpt-index.readthedocs.io/en/latest/) and FastAPI.
   * [Poe Simulator](https://github.com/poe-platform/poe-protocol/blob/main/simulator\_poe), a simulated Poe server for testing your bot
+
+## Questions?
+
+Join us on [Discord](https://discord.gg/TKxT6kBpgm) with any questions.
