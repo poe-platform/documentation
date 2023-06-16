@@ -1,9 +1,13 @@
 # Table of contents
 
-## Documentation
-
 * [Welcome to Poe for Developers](README.md)
-* [How to create a prompt bot](documentation/how-to-create-a-prompt-bot.md)
-* [Prompts - Best practices](documentation/prompts-best-practices.md)
-* [API Bots - Quick start](documentation/api-bots-quick-start.md)
-* [Poe Protocol Specification](documentation/poe-protocol-specification.md)
+
+## Prompt Bots
+
+* [How to create a prompt bot](prompt-bots/how-to-create-a-prompt-bot.md)
+* [Prompts - Best practices](prompt-bots/prompts-best-practices.md)
+
+## API Bots
+
+* [Quick start](api-bots/quick-start.md)
+* [Poe Protocol Specification](api-bots/poe-protocol-specification.md)
