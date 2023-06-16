@@ -11,3 +11,4 @@
 
 * [Quick start](api-bots/quick-start.md)
 * [Poe Protocol Specification](api-bots/poe-protocol-specification.md)
+* [API to access bots on Poe](api-bots/api-to-access-bots-on-poe.md)
