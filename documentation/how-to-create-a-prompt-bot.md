@@ -2,7 +2,7 @@
 
 ## Step 1: Open the create bot page
 
-If you are on web, go to poe.com and click on the "Create a bot" button on the sidebar. Alternatively you can navigate directly to [poe.com/create\_bot](https://poe.com/create\_bot). If you are using the mobile app, click on the hamburger in the top-left to open the sidebar and then click on the "Create a bot" button.
+If you are on web, go to [poe.com](https://poe.com) and click on the "Create a bot" button on the sidebar. Alternatively you can navigate directly to [poe.com/create\_bot](https://poe.com/create\_bot). If you are using the mobile app, click on the hamburger in the top-left to open the sidebar and then click on the "Create a bot" button.
 
 <figure><img src="../.gitbook/assets/image (3).png" alt="" width="258"><figcaption></figcaption></figure>
 
@@ -10,7 +10,7 @@ If you are on web, go to poe.com and click on the "Create a bot" button on the s
 
 #### Select a picture (Optional)
 
-This helps give your bot a distinctive look
+This helps give your bot a distinctive look.
 
 <figure><img src="../.gitbook/assets/image.png" alt="" width="254"><figcaption></figcaption></figure>
 
@@ -30,7 +30,7 @@ A piece of text that describes your bot. This will be shown to people who land o
 
 #### Select a base bot
 
-This is the underlying bot that your prompt bot is powered by. The currently supported options are chatGPT and Claude-Instant.
+This is the underlying bot that your prompt bot is powered by. The currently supported options are ChatGPT and Claude-instant.
 
 <figure><img src="../.gitbook/assets/image (6).png" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -52,15 +52,15 @@ This is message that the bot starts with when users land on the bot page. This c
 
 #### Suggest replies
 
-Whether a user should see some llm-generated reply options after getting a response from the bot. This could help in lowering friction for users if the option is a good fit for your bot.
+Whether a user should see some LLM-generated reply options after getting a response from the bot. This could help in lowering friction for users if the option is a good fit for your bot.
 
 #### Render markdown content
 
-Allows messages with the bot to be rendered using Markdown
+Allows messages with the bot to be rendered using Markdown. If this is off, messages are rendered as plain text.
 
 #### Linkify bot responses
 
-Whether nouns and entities in the bot response should be highlighted and linkified. Tapping or clicking on these links generates a message to the bot of the form "Tell me more about {entity}"
+Whether nouns and entities in the bot response should be highlighted and linkified. Tapping or clicking on these links generates a message to the bot of the form "Tell me more about {entity}".
 
 ## Step 5: Create bot
 

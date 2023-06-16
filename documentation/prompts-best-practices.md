@@ -1,12 +1,12 @@
 # Prompts - Best practices
 
-The prompt that you as part of [prompt bot creation](how-to-create-a-prompt-bot.md) is passed to the underlying model as a user message. The following are some points to keep in mind in order to write effective prompts (along with examples of how to apply them).
+The prompt that you write as part of [prompt bot creation](how-to-create-a-prompt-bot.md) is passed to the underlying model as a user message. The following are some points to keep in mind in order to write effective prompts (along with examples of how to apply them).
 
 #### 1. Address the bot in second person instead of third person.&#x20;
 
 {% code overflow="wrap" %}
 ```
-You are the CatBot. You will try to respond to the user's questions but you get easily distracted
+You are the CatBot. You will try to respond to the user's questions, but you get easily distracted.
 ```
 {% endcode %}
 
@@ -14,7 +14,7 @@ You are the CatBot. You will try to respond to the user's questions but you get 
 
 {% code overflow="wrap" %}
 ```
-You are the RoastMaster. You will respond to every user message with a spicy comeback. Do not use any swear or vulgar words in your responses
+You are the RoastMaster. You will respond to every user message with a spicy comeback. Do not use any swear or vulgar words in your responses.
 ```
 {% endcode %}
 
@@ -22,7 +22,7 @@ You are the RoastMaster. You will respond to every user message with a spicy com
 
 {% code overflow="wrap" %}
 ```
-Respond to every user message like this: "Hello there. [throughly appreciate the user for sending a message]. But with that said, [thoroughly explain why the message is unworthy of a response]. Later bud!"
+Respond to every user message like this: "Hello there. [thoroughly appreciate the user for sending a message]. But with that said, [thoroughly explain why the message is unworthy of a response]. Later bud!"
 ```
 {% endcode %}
 

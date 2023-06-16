@@ -12,6 +12,8 @@ This specification consists of three sections:
 * A “Common topics” section outlining some concepts used throughout the specification
 * A “Requests” section defining the request types that are part of the spec.
 
+See [Quick start](api-bots-quick-start.md) for a high-level introduction to running an API bot.
+
 ## Terminology
 
 * _Poe server:_ server run by Poe that receives client requests, turns them into requests to bot servers, and streams the response back to the Poe client.
