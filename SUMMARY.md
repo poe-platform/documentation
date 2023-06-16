@@ -6,3 +6,4 @@
 * [How to create a prompt bot](documentation/how-to-create-a-prompt-bot.md)
 * [Prompts - Best practices](documentation/prompts-best-practices.md)
 * [API Bots - Quick start](documentation/api-bots-quick-start.md)
+* [Poe Protocol Specification](documentation/poe-protocol-specification.md)
