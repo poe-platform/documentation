@@ -5,10 +5,13 @@
 ## Prompt Bots
 
 * [How to create a prompt bot](prompt-bots/how-to-create-a-prompt-bot.md)
-* [Prompts - Best practices](prompt-bots/prompts-best-practices.md)
+* [Best practices for prompts](prompt-bots/best-practices-for-prompts.md)
 
 ## API Bots
 
 * [Quick start](api-bots/quick-start.md)
-* [Poe Protocol Specification](api-bots/poe-protocol-specification.md)
+* [Poe Protocol Specification](api-bots/poe-protocol-specification/README.md)
+  * [Concepts](api-bots/poe-protocol-specification/concepts.md)
+  * [Requests](api-bots/poe-protocol-specification/requests.md)
+  * [Samples and next steps](api-bots/poe-protocol-specification/samples-and-next-steps.md)
 * [API to access bots on Poe](api-bots/api-to-access-bots-on-poe.md)

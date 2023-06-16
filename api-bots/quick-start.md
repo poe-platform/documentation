@@ -1,6 +1,6 @@
-# API Bots - Quick start
+# Quick start
 
-This tutorial will help you quickly get an API bot running with the help of our [starter code](https://github.com/poe-platform/api-bot-tutorial). We will go over how to deploy this code and how to integrate your bot server with Poe. For more information on Poe API bots, check out the [poe-protocol-specification.md](poe-protocol-specification.md "mention").
+This tutorial will help you quickly get an API bot running with the help of our [starter code](https://github.com/poe-platform/api-bot-tutorial). We will go over how to deploy this code and how to integrate your bot server with Poe. For more information on Poe API bots, check out the [poe-protocol-specification](poe-protocol-specification/ "mention").
 
 ## Deploying your bot
 

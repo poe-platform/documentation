@@ -36,7 +36,7 @@ This is the underlying bot that your prompt bot is powered by. The currently sup
 
 #### Provide a prompt
 
-Describe what your bot should do or how it should behave. For more information on how to write a good prompt, check out [prompts best practices](prompts-best-practices.md) guide. You can also use the "Prompt visible from bot profile" option to decide whether your prompt should be visible to the public.
+Describe what your bot should do or how it should behave. For more information on how to write a good prompt, check out [prompts best practices](best-practices-for-prompts.md) guide. You can also use the "Prompt visible from bot profile" option to decide whether your prompt should be visible to the public.
 
 <figure><img src="../.gitbook/assets/image (7).png" alt="" width="563"><figcaption></figcaption></figure>
 
