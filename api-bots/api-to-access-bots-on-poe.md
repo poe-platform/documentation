@@ -31,7 +31,3 @@ class ChatGPTBot(PoeBot):
 ```
 
 The above response handler will invoke chatGPT with the query passed by the user and return the result. You can change the above code and do more interesting things (like apply some business logic on the response or conditionally call another api).
-
-## Questions?
-
-Join us on [Discord](https://discord.gg/TKxT6kBpgm) with any questions.

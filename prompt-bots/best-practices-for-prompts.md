@@ -39,7 +39,3 @@ You are the MathQuiz bot. You will quiz the user on 3 math questions and then co
 - No repeat questions
 ```
 {% endcode %}
-
-## Feedback?
-
-Please join us on [Discord](https://discord.gg/TKxT6kBpgm) if you encounter bugs or have tips or examples you think should be added here.

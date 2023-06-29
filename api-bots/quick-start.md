@@ -45,7 +45,3 @@ For faster iteration on the bot, modal offers the serve command which you can us
 * Refer to [poe-protocol](https://github.com/poe-platform/poe-protocol) to understand the full capabilities offered by Poe API bots and see some additional tools and samples, including:
   * The [specification](https://github.com/poe-platform/poe-protocol/blob/main/spec.md) that details precisely how API bots work
   * The [fastapi-poe](https://pypi.org/project/fastapi-poe/) library, which you can use as a base for creating Poe bots
-
-## Questions?
-
-Join us on [Discord](https://discord.gg/TKxT6kBpgm) with any questions.

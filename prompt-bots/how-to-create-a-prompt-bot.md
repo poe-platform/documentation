@@ -65,7 +65,3 @@ Whether nouns and entities in the bot response should be highlighted and linkifi
 ## Step 5: Create bot
 
 After filling all the required fields, click on the "Create bot" button at the bottom. That's it! You should get taken to your new bot's page after which you can start chatting with your bot or share it with your friends.
-
-## Questions?
-
-Join us on [Discord](https://discord.gg/TKxT6kBpgm) with any questions.

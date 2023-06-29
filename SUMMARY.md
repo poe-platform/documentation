@@ -19,3 +19,7 @@
     * [report\_error](api-bots/poe-protocol-specification/requests/report\_error.md)
   * [Samples and next steps](api-bots/poe-protocol-specification/samples-and-next-steps.md)
 * [Accessing other bots on Poe](api-bots/api-to-access-bots-on-poe.md)
+
+***
+
+* [How to contact us?](how-to-contact-us.md)
