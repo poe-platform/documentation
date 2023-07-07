@@ -4,7 +4,7 @@ This tutorial will help you quickly get an API bot running with the help of our 
 
 ## Deploying your bot
 
-We recommend using [Modal](https://modal.com/) to deploy your bot but you can also use the cloud provider of your choice; all you need to do is to make the bot server available at a publicly available URL and use that to [integrate with Poe](quick-start.md#integrating-with-poe). In order to use Modal to deploy your bot, do the following.
+We recommend using [Modal](https://modal.com/?utm\_source=poe) to deploy your bot but you can also use the cloud provider of your choice; all you need to do is to make the bot server available at a publicly available URL and use that to [integrate with Poe](quick-start.md#integrating-with-poe). In order to use Modal to deploy your bot, do the following.
 
 #### Step 1: Install the model client
 
@@ -12,7 +12,7 @@ Open a terminal and run `pip install modal-client`
 
 #### Step 2: Setup modal token
 
-In the terminal, run `modal token new`. You will taken to your web browser where you will be asked to log into modal using your Github account.
+This step involves setting up access to modal from your terminal. You only need to do this once for your computer. In the terminal, run `modal token new --source poe`. You will taken to your web browser where you will be asked to log into modal using your Github account.
 
 <figure><img src="../.gitbook/assets/login.png" alt=""><figcaption></figcaption></figure>
 
@@ -26,9 +26,9 @@ In your terminal, run:
 
 * `git clone https://github.com/poe-platform/api-bot-tutorial`
 * `cd api-bot-tutorial`
-* `modal serve main.py`
+* `modal deploy main.py`
 
-Modal will not deploy your app and output two urls: a) the endpoint at which your app is hosted b) an internal page you can go to in order to view your app. You will be using the former to integrate your bot into Poe.&#x20;
+Modal will now deploy your app and output two urls: a) the endpoint at which your app is hosted b) an internal page you can go to in order to view your app. You will be using the former to integrate your bot into Poe.&#x20;
 
 <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
