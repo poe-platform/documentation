@@ -4,4 +4,4 @@ This page describes changes made to the Poe protocol over time.
 
 ## Version 1.1
 
-* Add the `temperature` and `skip_system_prompt` parameters to `query` requests.
+* Add the `temperature`, `skip_system_prompt`, `stop_words`, and `logit_bias` parameters to `query` requests.
