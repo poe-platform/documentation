@@ -21,6 +21,14 @@ In addition to the request fields that are valid for all queries, `query` reques
 * `user_id` (identifier with type `u`): the user making the request
 * `conversation_id` (identifier with type `c`): identifier for the conversation the user is currently having. Resets when context is cleared.
 
+The Poe server may also send the following parameters influencing how the underlying
+LLM, if any, is invoked. Bot servers may ignore these parameters or treat them as
+hints as they wish:
+* `temperature` (float in range `0 <= temperature <= infinity`): indicates what temperature the bot should use while making requests. Bots for which this setting does not make sense may ignore this parameter.
+* `skip_system_prompt` (boolean): if set to true, bots should minimize any adjustments they make to the prompt before sending data to the underlying LLM. Exactly what this means is up to individual bots.
+* `stop_words` (array of string): if the LLM encounters one of these strings, it should stop its response.
+* `logit_bias` (object with float values): an object where the keys are tokens and the values are floats in the range `-100 <= value <= 100`, where a negative value makes the token less likely to be emitted and a positive value makes the token more likely to be emitted.
+
 ### Response
 
 The bot server should respond with an HTTP response code of 200. If any other response code is returned, the Poe server will show an error message to the user. The server must respond with a stream of server-sent events, as specified by the WhatWG ([https://html.spec.whatwg.org/multipage/server-sent-events.html](https://html.spec.whatwg.org/multipage/server-sent-events.html)).

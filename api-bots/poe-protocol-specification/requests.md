@@ -34,8 +34,6 @@ In addition to the request fields that are valid for all queries, `query` reques
 * `message_id` (identifier with type m): identifier for the message that the bot will create; also used for the `report_feedback` endpoint
 * `user_id` (identifier with type `u`): the user making the request
 * `conversation_id` (identifier with type `c`): identifier for the conversation the user is currently having. Resets when context is cleared.
-* `temperature` (float in range `0 <= temperature <= 1`): indicates what temperature the bot should use while making requests. Bots for which this setting does not make sense may ignore this parameter.
-* `skip_system_prompt` (boolean): if set to true, bots should minimize any adjustments they make to the prompt before sending data to the underlying LLM. Exactly what this means is up to individual bots.
 
 The bot server should respond with an HTTP response code of 200. If any other response code is returned, the Poe server will show an error message to the user. The server must respond with a stream of server-sent events, as specified by the WhatWG ([https://html.spec.whatwg.org/multipage/server-sent-events.html](https://html.spec.whatwg.org/multipage/server-sent-events.html)).
 
