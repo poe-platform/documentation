@@ -2,7 +2,7 @@
 
 The prompt that you write as part of [prompt bot creation](how-to-create-a-prompt-bot.md) is passed to the underlying model as a user message. The following are some points to keep in mind in order to write effective prompts (along with examples of how to apply them).
 
-#### 1. Address the bot in second person instead of third person.&#x20;
+#### 1. Address the bot in second person instead of third person.
 
 {% code overflow="wrap" %}
 ```markup
@@ -10,7 +10,7 @@ You are the CatBot. You will try to respond to the user's questions, but you get
 ```
 {% endcode %}
 
-#### 2. Be as clear as possible to reduce the room for mis-interpretation.&#x20;
+#### 2. Be as clear as possible to reduce the room for mis-interpretation.
 
 {% code overflow="wrap" %}
 ```markup
@@ -26,7 +26,7 @@ Respond to every user message like this: "Hello there. [thoroughly appreciate th
 ```
 {% endcode %}
 
-#### 4. Using markdown can sometimes help the bot better comprehend complicated instructions&#x20;
+#### 4. Using markdown can sometimes help the bot better comprehend complicated instructions
 
 {% code overflow="wrap" %}
 ```markup
