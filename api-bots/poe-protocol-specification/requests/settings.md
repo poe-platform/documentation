@@ -6,7 +6,7 @@ The server should respond with a response code of 200 and content type of `appli
 
 If a settings request fails (it does not return a 200 response code with a valid JSON body), the previous settings are used for the bot. If this is the first request, that means the default values are used for all settings; if it is a refetch request, the settings previously used for the bot remain in use. If the request does not return a 2xx or 501 response code, the Poe server may retry the settings request after some time.
 
-### Response&#x20;
+### Response
 
 The response may contain the following keys:
 
