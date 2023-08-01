@@ -9,7 +9,7 @@ The characters before the hyphen are a tag that represents the type of the objec
 * `m`: represents a message
 * `u`: represents a user
 * `c`: represents a conversation
-
+* `d`: represents metadata sent with a message
 
 
 ### Authentication

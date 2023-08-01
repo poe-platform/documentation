@@ -26,6 +26,7 @@ In your terminal, run:
 
 * `git clone https://github.com/poe-platform/api-bot-tutorial`
 * `cd api-bot-tutorial`
+* `pip install -r requirements.txt`
 * `modal deploy main.py`
 
 Modal will now deploy your app and output two urls: a) the endpoint at which your app is hosted b) an internal page you can go to in order to view your app. You will be using the former to integrate your bot into Poe.

@@ -17,9 +17,14 @@ In addition to the request fields that are valid for all queries, `query` reques
   * `feedback` (array): A list of dictionaries representing feedback that the user gave to the message. Each dictionary has the following keys:
     * `type` (string): Either `like` or `dislike`. More types may be added in the future and bot servers should ignore types they do not recognize.
     * `reason` (string): A string representing the reason for the action. This key may be omitted.
-* `message_id` (identifier with type m): identifier for the message that the bot will create; also used for the `report_feedback` endpoint
+  * `attachments` (array): A list of dictionaries representing attachments that the user has sent with message. Each dictionary has the following keys:
+    * `url` (string): A URL pointing to the raw file. This URL is only guaranteed to remain valid for 10 minutes from when the request is sent.
+    * `content_type` (string): The MIME type for the file (e.g., `image/png` or `application/pdf`).
+    * `name` (string): The file name for the file (e.g., `paper.pdf`).
+* `message_id` (identifier with type `m`): identifier for the message that the bot will create; also used for the `report_feedback` endpoint
 * `user_id` (identifier with type `u`): the user making the request
 * `conversation_id` (identifier with type `c`): identifier for the conversation the user is currently having. Resets when context is cleared.
+* `metadata` (identifier with type `d`): internal metadata used by Poe when [accessing other bots](../../api-to-access-bots-on-poe.md). This data must be sent when using the API to access other Poe bots.
 
 The Poe server may also send the following parameters influencing how the underlying
 LLM, if any, is invoked. Bot servers may ignore these parameters or treat them as
