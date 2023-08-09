@@ -11,12 +11,9 @@ The characters before the hyphen are a tag that represents the type of the objec
 * `c`: represents a conversation
 * `d`: represents metadata sent with a message
 
-
 ### Authentication
 
 When a user creates a bot, we assign a randomly generated token consisting of 32 ASCII characters. To confirm that requests come from Poe servers, all requests will have an Authorization HTTP header “Bearer \<token>”, where \<token> is the token. Bot servers can use this to validate that requests come from real Poe servers.
-
-
 
 ### Context window
 
@@ -31,16 +28,12 @@ The `settings` endpoint (see below) allows bot servers to control these two mode
 
 The context window can grow arbitrarily large if the bot’s settings disallow context clearing, or simply if the user never manually clears their context and continually talks to the bot.
 
-
-
 ### Content types
 
 Messages may use the following content types:
 
 * `text/plain`: Plain text, rendered without further processing
-* `text/markdown`: Markdown text. Specifically, this supports all features of GitHub-Flavored Markdown (GFM, specified at [https://github.github.com/gfm/](https://github.github.com/gfm/)). Poe may however modify the rendered Markdown for security or usability reasons. In particular, images are not yet supported.
-
-
+* `text/markdown`: Markdown text. Specifically, this supports all features of GitHub-Flavored Markdown (GFM, specified at [https://github.github.com/gfm/](https://github.github.com/gfm/)). Poe may however modify the rendered Markdown for security or usability reasons.
 
 ### Versioning
 
@@ -53,8 +46,6 @@ The second number is the _response version._ It will be incremented whenever the
 The response version is also incremented for backward-compatible changes to the request. For example, if we add a new field to the request body, we would increment the response version. This is safe for old bot servers as they will simply ignore the added field.
 
 Throughout the protocol, bot servers should ignore any dictionary keys without a specified meaning. They may be used in a future version of the protocol.
-
-
 
 ### Limits
 

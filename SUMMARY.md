@@ -1,5 +1,7 @@
 # Table of contents
 
+## Overview
+
 * [Welcome to Poe for Developers](README.md)
 
 ## Prompt Bots
@@ -20,6 +22,6 @@
   * [Samples and next steps](api-bots/poe-protocol-specification/samples-and-next-steps.md)
 * [Accessing other bots on Poe](api-bots/api-to-access-bots-on-poe.md)
 
-***
+## Resources
 
-* [How to contact us?](how-to-contact-us.md)
+* [How to contact us?](resources/how-to-contact-us.md)
