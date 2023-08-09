@@ -33,7 +33,7 @@ The context window can grow arbitrarily large if the bot’s settings disallow c
 Messages may use the following content types:
 
 * `text/plain`: Plain text, rendered without further processing
-* `text/markdown`: Markdown text. Specifically, this supports all features of GitHub-Flavored Markdown (GFM, specified at [https://github.github.com/gfm/](https://github.github.com/gfm/)). Poe may however modify the rendered Markdown for security or usability reasons.
+* `text/markdown`: Markdown text. Specifically, this supports all features of GitHub-Flavored Markdown (GFM, specified at [https://github.github.com/gfm/](https://github.github.com/gfm/)) except that Markdown image rendering is currently not supported by the Poe android app. Poe may however modify the rendered Markdown for security or usability reasons.
 
 ### Versioning
 

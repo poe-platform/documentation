@@ -58,7 +58,7 @@ Whether a user should see some LLM-generated reply options after getting a respo
 
 Allows messages with the bot to be rendered using Markdown. If this is off, messages are rendered as plain text.&#x20;
 
-Poe supports GitHub-Flavored Markdown (GFM, specified at [https://github.github.com/gfm/](https://github.github.com/gfm/)) however, for security and privacy reasons, prompt bots only support images hosted at imgur.com and unsplash.com for now. Images that use any other URL will fail to render.
+Poe supports GitHub-Flavored Markdown (GFM, specified at [https://github.github.com/gfm/](https://github.github.com/gfm/)) except that Markdown image rendering is currently not supported on the Poe Android app. In addition, for security and privacy reasons, prompt bots only support images hosted at imgur.com and unsplash.com for now. Images that use any other URL will fail to render.
 
 #### Linkify bot responses
 
