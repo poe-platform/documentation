@@ -1,0 +1,4 @@
+root: ./
+
+redirects:
+    server-bots: api-bots/quick-start
