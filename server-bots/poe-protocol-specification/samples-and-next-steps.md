@@ -25,7 +25,7 @@ For the Poe conversation above, the Poe server sends a POST request to `https://
 }
 ```
 
-The provider responds with an HTTP 200 response code, then sends the following server-sent events:
+The bot server responds with an HTTP 200 response code, then sends the following server-sent events:
 
 ```json
 event: meta
