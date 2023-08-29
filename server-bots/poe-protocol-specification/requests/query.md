@@ -24,11 +24,10 @@ In addition to the request fields that are valid for all queries, `query` reques
 * `message_id` (identifier with type `m`): identifier for the message that the bot will create; also used for the `report_feedback` endpoint
 * `user_id` (identifier with type `u`): the user making the request
 * `conversation_id` (identifier with type `c`): identifier for the conversation the user is currently having. Resets when context is cleared.
-* `metadata` (identifier with type `d`): internal metadata used by Poe when [accessing other bots](../../api-to-access-bots-on-poe.md). This data must be sent when using the API to access other Poe bots.
+* `metadata` (identifier with type `d`): internal metadata used by Poe when [accessing other bots](../../accessing-other-bots-on-poe.md). This data must be sent when using the API to access other Poe bots.
 
-The Poe server may also send the following parameters influencing how the underlying
-LLM, if any, is invoked. Bot servers may ignore these parameters or treat them as
-hints as they wish:
+The Poe server may also send the following parameters influencing how the underlying LLM, if any, is invoked. Bot servers may ignore these parameters or treat them as hints as they wish:
+
 * `temperature` (float in range `0 <= temperature <= infinity`): indicates what temperature the bot should use while making requests. Bots for which this setting does not make sense may ignore this parameter.
 * `skip_system_prompt` (boolean): if set to true, bots should minimize any adjustments they make to the prompt before sending data to the underlying LLM. Exactly what this means is up to individual bots.
 * `stop_sequences` (array of string): if the LLM encounters one of these strings, it should stop its response.

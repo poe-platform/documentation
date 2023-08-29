@@ -20,7 +20,7 @@
     * [report\_feedback](server-bots/poe-protocol-specification/requests/report\_feedback.md)
     * [report\_error](server-bots/poe-protocol-specification/requests/report\_error.md)
   * [Samples and next steps](server-bots/poe-protocol-specification/samples-and-next-steps.md)
-* [Accessing other bots on Poe](server-bots/api-to-access-bots-on-poe.md)
+* [Accessing other bots on Poe](server-bots/accessing-other-bots-on-poe.md)
 
 ## Resources
 
