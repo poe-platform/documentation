@@ -48,13 +48,14 @@ The text may also be split into more or fewer individual events as desired. Send
 
 ## Next steps
 
-* Check out our [quick start](https://github.com/poe-platform/server-bot-tutorial) to promptly get a bot running.
-* Example implementations
-  * [HerokuCat](https://poe.com/HerokuCat), a demo bot to demonstrate the features of the protocol.
-    * See the [documentation](https://github.com/poe-platform/server-bot-tutorial/blob/main/catbot/catbot.md) for a full list of commands supported.
-    * The source code for this bot is available in the [tutorial](https://github.com/poe-platform/server-bot-tutorial/blob/main/catbot/\_\_init\_\_.py).
+* Check out our [quick start](https://github.com/poe-platform/server-bot-quick-start) to promptly get a bot running.
+* Tools:
   * [fastapi-poe](https://github.com/poe-platform/poe-protocol/blob/main/fastapi\_poe), a library for building Poe bots using the FastAPI framework. We recommend using this library if you are building your own bot.
   * [aiohttp-poe](https://github.com/poe-platform/poe-protocol/blob/main/aiohttp\_poe), a similar library built on top of aiohttp
   * [langchain-poe](https://github.com/poe-platform/poe-protocol/blob/main/langchain\_poe), an example bot built on top of ChatGPT using [LangChain](https://github.com/hwchase17/langchain)
+  * [Poe Simulator](https://github.com/poe-platform/poe-protocol/blob/main/simulator\_poe), a simulated Poe server for testing your bots.
+* Example bots:
+  * [HerokuCat](https://poe.com/HerokuCat), a demo bot to demonstrate the features of the protocol.
+    * See the [documentation](https://github.com/poe-platform/server-bot-quick-start/blob/main/catbot/catbot.md) for a full list of commands supported.
+    * The source code for this bot is available in the [tutorial](https://github.com/poe-platform/server-bot-quick-start/blob/main/catbot/\_\_init\_\_.py).
   * [llama-poe](https://github.com/poe-platform/poe-protocol/blob/main/llama\_poe), a knowledge-augmented Poe bot powered by [LlamaIndex](https://gpt-index.readthedocs.io/en/latest/) and FastAPI.
-  * [Poe Simulator](https://github.com/poe-platform/poe-protocol/blob/main/simulator\_poe), a simulated Poe server for testing your botjson
