@@ -19,7 +19,7 @@ from fastapi_poe.client import stream_request
 
 class ChatGPTBot(PoeBot):
     async def get_response(self, query: QueryRequest) -> AsyncIterable[ServerSentEvent]:
-        async for msg in stream_request(query, "chatGPT", query.api_key):
+        async for msg in stream_request(query, "chatGPT", query.access_key):
             if isinstance(msg, MetaMessage):
                 continue
             elif msg.is_suggested_reply:
