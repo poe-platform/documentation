@@ -2,7 +2,7 @@
 
 ## Sample
 
-[![Screenshot of a Poe chat where the user asks "What is the capital of Nepal?" and the bot answers "The capital of Nepal is Kathmandu".](https://github.com/poe-platform/poe-protocol/raw/main/images/chat-sample.png)](https://github.com/poe-platform/poe-protocol/blob/main/images/chat-sample.png)
+<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
 Suppose we’re having the above conversation over Poe with a bot server running at `https://ai.example.com/llm`.
 

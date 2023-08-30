@@ -1,6 +1,6 @@
 # Poe Protocol Specification
 
-[Poe](https://poe.com/) is a platform for interacting with AI-based bots. That includes well-known chat bots like OpenAI's ChatGPT and Anthropic's Claude, but anyone can create their own bot by implementing the following protocol.
+[Poe](https://poe.com/) is a platform for interacting with AI-based bots. Poe provides access to popular chat bots like OpenAI's ChatGPT and Anthropic's Claude, but also allows a developer to create their own bot by implementing the following protocol.
 
 ## Introduction
 

@@ -13,20 +13,7 @@ The characters before the hyphen are a tag that represents the type of the objec
 
 ### Authentication
 
-When a user creates a bot, we assign a randomly generated token consisting of 32 ASCII characters. To confirm that requests come from Poe servers, all requests will have an Authorization HTTP header “Bearer \<token>”, where \<token> is the token. Bot servers can use this to validate that requests come from real Poe servers.
-
-### Context window
-
-When we send a query request to the bot server, we send the previous messages in this conversation, both from the user and from the bot. However, in some cases we truncate the conservation. This is called the _context window_.
-
-By default, there are two ways for the context window to reset:
-
-* When the user clicks the icon in the app that resets context.
-* When the user has not interacted with the bot for some time (around 1 hour, but the exact cutoff is subject to change).
-
-The `settings` endpoint (see below) allows bot servers to control these two modes of context clearing through the `allow_user_context_clear` and `context_clear_window_secs` settings.
-
-The context window can grow arbitrarily large if the bot’s settings disallow context clearing, or simply if the user never manually clears their context and continually talks to the bot.
+While creating a bot, a developer can provide an access key consisting of 32 ASCII characters. To allow bot servers to confirm that the requests come from Poe, all requests will have an Authorization HTTP header “Bearer \<access\_key>”.
 
 ### Content types
 

@@ -1,10 +1,10 @@
 # Quick start
 
-This tutorial will help you quickly get a server bot running with the help of our [starter code](https://github.com/poe-platform/server-bot-quick-start). We will go over how to deploy this code and how to integrate your server with Poe. For more information on Poe server bots, check out the [poe-protocol-specification](poe-protocol-specification/ "mention").
+This tutorial will help you quickly get a server bot running with the help of our [starter code](https://github.com/poe-platform/server-bot-quick-start). We will go over how to deploy your server and integrate it with Poe. For more information on Poe server bots, check out the [poe-protocol-specification](poe-protocol-specification/ "mention").
 
 ## Deploying your bot
 
-We recommend using [Modal](https://modal.com/?utm\_source=poe) to deploy your bot but you can also use the cloud provider of your choice; all you need to do is to make the bot server available at a publicly available URL and use that to [integrate with Poe](quick-start.md#integrating-with-poe). In order to use Modal to deploy your bot, do the following.
+We recommend using [Modal](https://modal.com/?utm\_source=poe) to deploy your bot but you can also use the cloud provider of your choice; all you need to do is to make the bot server available at a publicly available URL and once you have that, you can skip to the [last step](quick-start.md#integrating-with-poe). In order to use Modal to deploy your bot, do the following.
 
 #### Step 1: Install the model client
 
@@ -29,13 +29,13 @@ In your terminal, run:
 * `pip install -r requirements.txt`
 * `modal deploy main.py`
 
-Modal will now deploy your app and output two urls: a) the endpoint at which your app is hosted b) an internal page you can go to in order to view your app. You will be using the former to integrate your bot into Poe.
+Modal will now deploy your app and output two urls: a) the endpoint at which your app is hosted b) an internal page where you can monitor your app. You will be using the former to integrate your bot into Poe.
 
 <figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 ## Integrating with Poe
 
-Once you have a bot running under a publicly accessible URL, it is time to connect it to Poe. You can do that on your desktop by going to the bot creation [form](https://poe.com/create\_bot?server=1). You can customize how your bot looks by providing a picture, name and description. After you fill out the server URL, click "create bot", your bot should be ready for use in all Poe clients!
+Once you have a bot running under a publicly accessible URL, it is time to connect it to Poe. You can do that on your desktop by going to the bot creation [form](https://poe.com/create\_bot?server=1). You can customize how your bot looks by providing a picture, name and description. After you fill out the server URL and click "create bot", your bot should be ready for use on all Poe clients.
 
 ## Iterating on the bot
 

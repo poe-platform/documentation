@@ -30,7 +30,7 @@ A piece of text that describes your bot. This will be shown to people who land o
 
 #### Select a base bot
 
-This is the underlying bot that your prompt bot is powered by. The currently supported options are ChatGPT and Claude-instant.
+This is the underlying bot that your prompt bot is powered by.
 
 <figure><img src="../.gitbook/assets/image (6).png" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -48,8 +48,6 @@ This is message that the bot starts with when users land on the bot page. This c
 
 ## Step 4: Decide if you need any advanced features (Optional)
 
-<figure><img src="../.gitbook/assets/image (11).png" alt="" width="563"><figcaption></figcaption></figure>
-
 #### Suggest replies
 
 Whether a user should see some LLM-generated reply options after getting a response from the bot. This could help in lowering friction for users if the option is a good fit for your bot.
@@ -60,10 +58,10 @@ Allows messages with the bot to be rendered using Markdown. If this is off, mess
 
 Poe supports GitHub-Flavored Markdown (GFM, specified at [https://github.github.com/gfm/](https://github.github.com/gfm/)) except that Markdown image rendering is currently not supported on the Poe Android app. In addition, for security and privacy reasons, prompt bots only support images hosted at imgur.com and unsplash.com for now. Images that use any other URL will fail to render.
 
-#### Linkify bot responses
+#### Custom temperature
 
-Whether nouns and entities in the bot response should be highlighted and linkified. Tapping or clicking on these links generates a message to the bot of the form "Tell me more about {entity}".
+Allows you to specify the temperature you want to use for your bot with higher temperatures leading to more randomness in a bot's response.
 
 ## Step 5: Create bot
 
-After filling all the required fields, click on the "Create bot" button at the bottom. That's it! You should get taken to your new bot's page after which you can start chatting with your bot or share it with your friends.
+After filling all the required fields, click on the "Create bot" button at the bottom. That's it! You should get taken to your new bot's page after which you can start chatting or share the bot with your friends.

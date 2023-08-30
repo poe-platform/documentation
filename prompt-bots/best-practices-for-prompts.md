@@ -1,6 +1,6 @@
 # Best practices for prompts
 
-The prompt that you write as part of [prompt bot creation](how-to-create-a-prompt-bot.md) is passed to the underlying model as a user message. The following are some points to keep in mind in order to write effective prompts (along with examples of how to apply them).
+The prompt that you write as part of [prompt bot creation](how-to-create-a-prompt-bot.md) is passed to the underlying model as a user message. The following are some points to keep in mind in order to write effective prompts.
 
 #### 1. Address the bot in second person instead of third person.
 

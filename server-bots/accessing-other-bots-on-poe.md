@@ -1,6 +1,6 @@
 # Accessing other bots on Poe
 
-The Poe third party bot API allows bot developers to invoke other bots on Poe (which includes bots created by Poe like ChatGPT and Claude-Instant and bots created by other developers) and this access is provided for free so that developers do not have to worry about LLM costs. For every user message, server bot developers get to make up to two calls to another bot of their choice.
+The Poe third party bot API allows developers to invoke other bots on Poe (which includes bots created by Poe like ChatGPT and Claude-Instant and bots created by other developers) and this access is provided for free so that developers do not have to worry about LLM costs. For every user message, server bot developers get to make up to two calls to another bot of their choice.
 
 {% hint style="info" %}
 If you are just getting started with server bots, we recommend checking out our [quick start](quick-start.md) guide. The following tutorial is specifically for how you invoke other bots and assumes that you are familiar with the concept of server bots.
@@ -30,4 +30,4 @@ class ChatGPTBot(PoeBot):
                 yield self.text_event(msg.text)
 ```
 
-The above response handler will invoke chatGPT with the query passed by the user and return the result. You can change the above code and do more interesting things (like apply some business logic on the response or conditionally call another api).
+The above response handler will invoke chatGPT with the query passed by the user and return the result. You can modify the code and do more interesting things (like apply some business logic on the response or conditionally call another api).
