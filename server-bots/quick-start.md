@@ -1,6 +1,12 @@
 # Quick start
 
-This tutorial will help you quickly get a server bot running with the help of our [starter code](https://github.com/poe-platform/server-bot-quick-start). We will go over how to deploy your server and integrate it with Poe. For more information on Poe server bots, check out the [poe-protocol-specification](poe-protocol-specification/ "mention").
+In this quick start, we will build a backend bot server and then integrate it with Poe. Once you have created a Poe bot powered by your backend, any Poe user can interact with your bot. The following diagram might be useful in visualizing how your bot server fits into Poe.
+
+<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+For more information on Poe server bots, check out the [poe-protocol-specification](poe-protocol-specification/ "mention").
+{% endhint %}
 
 ## Deploying your bot
 
