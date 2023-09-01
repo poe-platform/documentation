@@ -10,6 +10,9 @@ We recommend using [Modal](https://modal.com/?utm\_source=poe) to deploy your bo
 
 Open a terminal and run `pip install modal-client`
 
+If you're using an M chip Macbook, you might run into errors about incompatible architecture. \
+If that happens, try running `pip install modal-client --compile --force-reinstall` instead.
+
 #### Step 2: Setup modal token
 
 This step involves setting up access to modal from your terminal. You only need to do this once for your computer. In the terminal, run `modal token new --source poe`. You will taken to your web browser where you will be asked to log into modal using your Github account.
