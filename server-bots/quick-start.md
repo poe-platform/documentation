@@ -10,8 +10,9 @@ We recommend using [Modal](https://modal.com/?utm\_source=poe) to deploy your bo
 
 Open a terminal and run `pip install modal-client`
 
-If you're using an M chip Macbook, you might run into errors about incompatible architecture. \
-If that happens, try running `pip install modal-client --compile --force-reinstall` instead.
+{% hint style="info" %}
+If you are using a MacBook with Apple silicon and encounter errors about incompatible architecture when installing the modal-client, try running `pip install modal-client --compile --force-reinstall` instead.
+{% endhint %}
 
 #### Step 2: Setup modal token
 
