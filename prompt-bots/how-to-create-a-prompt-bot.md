@@ -8,7 +8,7 @@ If you are on web, go to [poe.com](https://poe.com) and click on the "Create a b
 
 ## Step 2: Customize how your bot will look
 
-#### Select a picture (Optional)
+#### Upload a picture (Optional)
 
 This helps give your bot a distinctive look.
 
@@ -20,7 +20,7 @@ The name is a unique identifier and can use 4-15 alphanumeric characters. The fi
 
 <figure><img src="../.gitbook/assets/image (9).png" alt="" width="563"><figcaption></figcaption></figure>
 
-#### Select a bot description (Optional)
+#### Write a bot description (Optional)
 
 A piece of text that describes your bot. This will be shown to people who land on the bot page.
 
@@ -62,6 +62,6 @@ Poe supports GitHub-Flavored Markdown (GFM, specified at [https://github.github.
 
 Allows you to specify the temperature you want to use for your bot with higher temperatures leading to more randomness in a bot's response.
 
-## Step 5: Create bot
+## Step 5: Create your bot
 
-After filling all the required fields, click on the "Create bot" button at the bottom. That's it! You should get taken to your new bot's page after which you can start chatting or share the bot with your friends.
+After filling out all the required fields, click on the "Create bot" button at the bottom. That's it! You should get taken to your new bot's page, and from there you can start chatting or share the bot with your friends.
