@@ -24,4 +24,4 @@
 
 ## Resources
 
-* [How to contact us?](resources/how-to-contact-us.md)
+* [How to contact us](resources/how-to-contact-us.md)
