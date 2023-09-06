@@ -1,6 +1,6 @@
 # Quick start
 
-In this quick start, we will build a backend bot server and then integrate it with Poe. Once you have created a Poe bot powered by your backend, any Poe user can interact with your bot. The following diagram might be useful in visualizing how your bot server fits into Poe.
+In this quick start, we will build a backend bot server in Python and then integrate it with Poe. Once you have created a Poe bot powered by your backend, any Poe user can interact with your bot. The following diagram might be useful in visualizing how your bot server fits into Poe.
 
 <figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
@@ -14,15 +14,17 @@ We recommend using [Modal](https://modal.com/?utm\_source=poe) to deploy your bo
 
 #### Step 1: Install the Modal client
 
-Open a terminal and run `pip install modal-client`
+Make sure you have Python installed. Open a terminal and run `pip install modal-client`
 
 {% hint style="info" %}
-If you are using a MacBook with Apple silicon and encounter errors about incompatible architecture when installing the modal-client, try running `pip install modal-client --compile --force-reinstall` instead.
+You might have to use pip3 instead of pip depending on your version of Python.
 {% endhint %}
 
 #### Step 2: Setup your Modal token
 
-This step involves setting up access to modal from your terminal. You only need to do this once for your computer. In the terminal, run `modal token new --source poe`. You will taken to your web browser where you will be asked to log into modal using your Github account.
+This step involves setting up access to modal from your terminal. You only need to do this once for your computer. In the terminal, run `modal token new --source poe`. If you run into a "command not found" error, try [this](https://modal.com/docs/guide/troubleshooting#command-not-found-errors).
+
+If that command runs successfully, you will taken to your web browser where you will be asked to log into modal using your Github account.
 
 <figure><img src="../.gitbook/assets/login.png" alt=""><figcaption></figcaption></figure>
 
@@ -49,7 +51,8 @@ Once you have a bot running under a publicly accessible URL, it is time to conne
 
 ## Iterating on your bot
 
-For faster iteration on your bot, Modal offers the serve command which you can use by running `modal serve main.py`. Modal will deploy an ephemeral app on the cloud which gets live-updated when you make changes to the underlying code. Feel free to comment/uncomment any of the other example bots to try them out or build off of them.
+* For faster iteration on your bot, we recommend using `modal serve main.py`. On running that command, Modal will deploy an ephemeral version of your app which live updates in response to any code change. In addition, any print/debug statements will output to your terminal.
+* Feel free to comment/uncomment any of the other example bots in `main.py` to try them out or build off of them.
 
 ## Where to go from here
 
