@@ -4,8 +4,6 @@
 
 If you are using a web browser, go to [poe.com](https://poe.com) and click on the "Create a bot" button in the left sidebar. Alternatively you can navigate directly to [poe.com/create\_bot](https://poe.com/create\_bot). If you are using the Poe mobile app, tap the ≡ icon the top-left to open the sidebar and then tap on the "Create a bot" button.
 
-<figure><img src="../.gitbook/assets/image (3).png" alt="" width="258"><figcaption></figcaption></figure>
-
 ## Step 2: Customize how your bot will look
 
 #### Upload a picture (Optional)
