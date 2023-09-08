@@ -30,4 +30,4 @@ class ChatGPTBot(PoeBot):
                 yield self.text_event(msg.text)
 ```
 
-The above response handler will invoke chatGPT with the query passed by the user and return the result. You can modify the code and do more interesting things (like apply some business logic on the response or conditionally call another api).
+The above response handler will invoke ChatGPT with the query passed by the user and return the result. You can modify the code and do more interesting things (like apply some business logic on the response or conditionally call another API).

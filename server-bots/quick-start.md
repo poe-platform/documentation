@@ -1,6 +1,6 @@
 # Quick start
 
-In this quick start, we will build a backend bot server in Python and then integrate it with Poe. Once you have created a Poe bot powered by your backend, any Poe user can interact with your bot. The following diagram might be useful in visualizing how your bot server fits into Poe.
+In this quick start guide, we will build a bot server in Python and then integrate it with Poe. Once you have created a Poe bot powered by your server, any Poe user can interact with it. The following diagram might be useful in visualizing how your bot server fits into Poe.
 
 <figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
@@ -10,7 +10,7 @@ For more information on Poe server bots, check out the [poe-protocol-specificati
 
 ## Deploying your bot
 
-We recommend using [Modal](https://modal.com/?utm\_source=poe) to deploy your bot but you can also use any cloud provider of your choice; all you need to do is to make the bot server available at a publicly available URL and once you have that, you can skip to [integrating it with Poe](quick-start.md#integrating-with-poe). In order to use Modal to deploy your bot, do the following.
+We recommend using [Modal](https://modal.com/?utm\_source=poe) to deploy your bot, but you can also use any cloud provider of your choice; all you need to do is to make the bot server available at a publicly available URL and once you have that, you can skip to [integrating it with Poe](quick-start.md#integrating-with-poe). In order to use Modal to deploy your bot, do the following.
 
 #### Step 1: Install the Modal client
 

@@ -2,19 +2,19 @@
 
 ## Step 1: Open the create bot page
 
-If you are using a web browser, go to [poe.com](https://poe.com) and click on the "Create a bot" button in the left sidebar. Alternatively you can navigate directly to [poe.com/create\_bot](https://poe.com/create\_bot). If you are using the Poe mobile app, tap the ≡ icon the top-left to open the sidebar and then tap on the "Create a bot" button.
+If you are using a web browser, go to [poe.com](https://poe.com) and click on the "Create a bot" button in the left sidebar. Alternatively you can navigate directly to [poe.com/create\_bot](https://poe.com/create\_bot). If you are using the Poe mobile app, tap the ≡ icon the top-left to open the sidebar and then tap on the "Create a bot" button at the top of the menu.
 
 ## Step 2: Customize how your bot will look
 
 #### Upload a picture (Optional)
 
-This helps give your bot a distinctive look.
+This helps give your bot a distinctive appearance.
 
 <figure><img src="../.gitbook/assets/image.png" alt="" width="254"><figcaption></figcaption></figure>
 
 #### Select a bot name
 
-The name is a unique identifier and can use 4-15 alphanumeric characters. The field will come prefilled with a randomly generated name that you can leave as it is. You can always come back and update the name later.
+The name is a unique identifier and can be 4-15 alphanumeric characters. The field will come prefilled with a randomly generated name that you can leave as it is. You can always come back and update the name later.
 
 <figure><img src="../.gitbook/assets/image (9).png" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -40,7 +40,7 @@ Describe what your bot should do or how it should behave. For more information o
 
 #### Provide an intro message (Optional)
 
-This is message that the bot starts with when users land on the bot page. This can be used to explain to the users what the bot does or get necessary information that the bot needs to get started.
+This is the message that the bot starts with when users land on the bot page. This can be used to explain to the users what the bot does or get necessary information that the bot needs to get started.
 
 <figure><img src="../.gitbook/assets/image (10).png" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -62,4 +62,4 @@ Allows you to specify the temperature you want to use for your bot. Higher tempe
 
 ## Step 5: Create your bot
 
-After filling out all the required fields, click on the "Create bot" button at the bottom. That's it! You should get taken to your new bot's page, and from there you can start chatting or share the bot with your friends.
+After filling out all the required fields, click on the "Create bot" button at the bottom of the screen. That's it! You will be taken to your new bot's page, and from there you can start chatting or share the bot with your friends.
