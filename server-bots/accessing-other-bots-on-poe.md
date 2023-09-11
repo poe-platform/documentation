@@ -12,22 +12,32 @@ If you are just getting started with server bots, we recommend checking out our 
 pip install fastapi_poe
 ```
 
-#### Implement the PoeBot class and use the stream\_request function
+#### Implement the PoeBot class&#x20;
+
+You have to declare your bot dependencies using the [settings](poe-protocol-specification/requests/settings.md) endpoint. In get response, use the stream\_request function.
 
 ```python
+from typing import AsyncIterable
+
+from fastapi_poe import PoeBot, run
 from fastapi_poe.client import stream_request
+from fastapi_poe.types import (
+    PartialResponse,
+    QueryRequest,
+    SettingsRequest,
+    SettingsResponse,
+)
+
 
 class ChatGPTBot(PoeBot):
-    async def get_response(self, query: QueryRequest) -> AsyncIterable[ServerSentEvent]:
+    async def get_response(self, query: QueryRequest) -> AsyncIterable[PartialResponse]:
         async for msg in stream_request(query, "chatGPT", query.access_key):
-            if isinstance(msg, MetaMessage):
-                continue
-            elif msg.is_suggested_reply:
-                yield self.suggested_reply_event(msg.text)
-            elif msg.is_replace_response:
-                yield self.replace_response_event(msg.text)
-            else:
-                yield self.text_event(msg.text)
+            yield msg
+
+    async def get_settings(self, setting: SettingsRequest) -> SettingsResponse:
+        return SettingsResponse(
+            server_bot_dependencies={"chatGPT": 1}
+        )
 ```
 
 The above response handler will invoke ChatGPT with the query passed by the user and return the result. You can modify the code and do more interesting things (like apply some business logic on the response or conditionally call another API).
