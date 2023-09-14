@@ -31,12 +31,12 @@ from fastapi_poe.types import (
 
 class ChatGPTBot(PoeBot):
     async def get_response(self, query: QueryRequest) -> AsyncIterable[PartialResponse]:
-        async for msg in stream_request(query, "chatGPT", query.access_key):
+        async for msg in stream_request(query, "ChatGPT", query.access_key):
             yield msg
 
     async def get_settings(self, setting: SettingsRequest) -> SettingsResponse:
         return SettingsResponse(
-            server_bot_dependencies={"chatGPT": 1}
+            server_bot_dependencies={"ChatGPT": 1}
         )
 ```
 
