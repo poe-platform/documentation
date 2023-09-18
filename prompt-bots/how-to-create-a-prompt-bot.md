@@ -10,7 +10,7 @@ If you are using a web browser, go to [poe.com](https://poe.com) and click on th
 
 This helps give your bot a distinctive appearance.
 
-<figure><img src="../.gitbook/assets/image.png" alt="" width="254"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt="" width="254"><figcaption></figcaption></figure>
 
 #### Select a bot name
 

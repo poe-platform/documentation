@@ -6,15 +6,34 @@ The Poe third party bot API allows developers to invoke other bots on Poe (which
 If you are just getting started with server bots, we recommend checking out our [quick start](quick-start.md) guide. The following tutorial is specifically for how you invoke other bots and assumes that you are familiar with the concept of server bots.
 {% endhint %}
 
-#### Install the Poe FastAPI client
+### Install the Poe FastAPI client
 
 ```bash
 pip install fastapi_poe
 ```
 
-#### Implement the PoeBot class&#x20;
+### Implement the PoeBot class&#x20;
 
-You have to declare your bot dependencies using the [settings](poe-protocol-specification/requests/settings.md) endpoint. In get response, use the stream\_request function.
+#### Define what bots you want to use
+
+You have to declare your bot dependencies using the [settings](poe-protocol-specification/requests/settings.md) endpoint.&#x20;
+
+```python
+async def get_settings(self, setting: SettingsRequest) -> SettingsResponse:
+    return SettingsResponse(
+        server_bot_dependencies={"ChatGPT": 1}
+    )
+```
+
+In your `get_response` handler, use the `stream_request` function to invoke any bot you want. The following is example where we `ChatGPT` with the query passed by the user and return the result.
+
+```python
+async def get_response(self, query: QueryRequest) -> AsyncIterable[PartialResponse]:
+    async for msg in stream_request(query, "ChatGPT", query.access_key):
+        yield msg
+```
+
+Your final code for this basic example should look like this:
 
 ```python
 from typing import AsyncIterable
@@ -40,4 +59,4 @@ class ChatGPTBot(PoeBot):
         )
 ```
 
-The above response handler will invoke ChatGPT with the query passed by the user and return the result. You can modify the code and do more interesting things (like apply some business logic on the response or conditionally call another API).
+Now, before you use the bot, you will have to follow the steps in [this](updating-bot-settings.md) article in order to get Poe to fetch your bots settings. Once that is done, try to use your bot on Poe and you will see the response from ChatGPT. You can modify the code and do more interesting things (like apply some business logic on the response or conditionally call another API).
