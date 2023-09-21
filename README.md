@@ -6,9 +6,10 @@ Poe is a platform for people to discover and talk to AI-powered bots. In additio
 
 * **Costs**: Operating a publicly available bot powered by large language models is prohibitively expensive for most, but creating a bot on Poe allows you to offload LLM inference costs entirely to Poe.
 * **Distribution**: Poe's bot recommendation system allows you to reach a large audience for your bot for free. Users can also conveniently share a chat with your bot both internally on Poe and externally, leading to even more exposure for your bot.
-* **Multiplatform UI**: Poe's native presence on all major platforms (Web, iOS, Android, MacOS etc) means that your users have a great, consistent experience with your bot no matter what device they are on, with login and synchronized history taken care of by the platform.
+* **Multi-platform UI**: Poe's native presence on all major platforms (Web, iOS, Android, MacOS, etc) means that your users have a great, consistent experience with your bot no matter what device they are on, with login and synchronized history taken care of by the platform.
+* **Model independence**: Building on Poe lets you build your product using models from all different providers (OpenAI, Anthropic, Google, and open source models like Llama 2 or SDXL). Poe is a neutral platform and so by building here, you can continually adapt your product use any combination of the best technologies as they are created, no matter who each one is made by.
 
-In summary, Poe lets developers focus entirely on how their bot will respond, and the platform handles everything else needed to make it accessible to a large audience.
+In summary, Poe lets developers focus entirely on the unique part of their bot: how it will respond. The platform handles everything else needed to bring it to a large audience and to operate it at scale, both now and as AI progress continues.
 
 ### Ways to create a bot on Poe
 
