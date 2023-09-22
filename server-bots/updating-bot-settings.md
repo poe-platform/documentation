@@ -21,6 +21,6 @@ You can find this key by going to the bot page and clicking the gear icon.
 
 On Windows, you can use the `Invoke-RestMethod` command. On a Macbook or Linux machine, you can use the curl command as follows:
 
-`curl -X POST https://api.poe.com/bot/fetch_settings/<botname/<access_key>`
+`curl -X POST https://api.poe.com/bot/fetch_settings/<botname>/<access_key>`
 
 That's it. The response to the above request will inform you whether the updated successfully.
