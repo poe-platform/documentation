@@ -40,7 +40,7 @@ Poe may implement limits on bot servers to ensure the reliability and scalabilit
 
 * The initial response to any request must be returned within 5 seconds.
 * The response to any request (including `query` requests) must be completed within 120 seconds.
-* The total length of a bot response (the sum of the length of all `text` events sent in response to a `query` request) may not exceed 10,000 characters.
+* The total length of a bot response (the sum of the length of all `text` events sent in response to a `query` request) may not exceed 100,000 characters.
 * The total number of events sent in response to a `query` event may not exceed 10,000.
 
 We may raise these limits in the future if good use cases come up.
