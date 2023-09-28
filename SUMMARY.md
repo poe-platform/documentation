@@ -7,7 +7,9 @@
 ## Prompt Bots
 
 * [How to create a prompt bot](prompt-bots/how-to-create-a-prompt-bot.md)
-* [Best practices for prompts](prompt-bots/best-practices-for-prompts.md)
+* [Best practices for prompts](prompt-bots/best-practices-for-prompts/README.md)
+  * [Text generation](prompt-bots/best-practices-for-prompts/text-generation.md)
+  * [Image generation](prompt-bots/best-practices-for-prompts/image-generation.md)
 
 ## Server bots
 
