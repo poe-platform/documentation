@@ -1,6 +1,6 @@
 # Accessing other bots on Poe
 
-The Poe third party bot API allows developers to invoke other bots on Poe (which includes bots created by Poe like ChatGPT and Claude-Instant and bots created by other developers) and this access is provided for free so that developers do not have to worry about LLM costs. For every user message, server bot developers get to make up to two calls to another bot of their choice.
+The Poe third party bot API allows developers to invoke other bots on Poe (which includes bots created by Poe like GPT-3.5-Turbo and Claude-Instant and bots created by other developers) and this access is provided for free so that developers do not have to worry about LLM costs. For every user message, server bot developers get to make up to two calls to another bot of their choice.
 
 {% hint style="info" %}
 If you are just getting started with server bots, we recommend checking out our [quick start](quick-start.md) guide. The following tutorial is specifically for how you invoke other bots and assumes that you are familiar with the concept of server bots.
@@ -21,11 +21,11 @@ You have to declare your bot dependencies using the [settings](poe-protocol-spec
 ```python
 async def get_settings(self, setting: SettingsRequest) -> SettingsResponse:
     return SettingsResponse(
-        server_bot_dependencies={"ChatGPT": 1}
+        server_bot_dependencies={"GPT-3.5-Turbo": 1}
     )
 ```
 
-In your `get_response` handler, use the `stream_request` function to invoke any bot you want. The following is example where we `ChatGPT` with the query passed by the user and return the result.
+In your `get_response` handler, use the `stream_request` function to invoke any bot you want. The following is example where we `GPT-3.5-Turbo` with the query passed by the user and return the result.
 
 ```python
 async def get_response(self, query: QueryRequest) -> AsyncIterable[PartialResponse]:
