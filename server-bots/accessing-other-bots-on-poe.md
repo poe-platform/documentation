@@ -29,7 +29,7 @@ In your `get_response` handler, use the `stream_request` function to invoke any 
 
 ```python
 async def get_response(self, query: QueryRequest) -> AsyncIterable[PartialResponse]:
-    async for msg in stream_request(query, "ChatGPT", query.access_key):
+    async for msg in stream_request(query, "GPT-3.5-Turbo", query.access_key):
         yield msg
 ```
 
@@ -48,15 +48,15 @@ from fastapi_poe.types import (
 )
 
 
-class ChatGPTBot(PoeBot):
+class GPT35TurboBot(PoeBot):
     async def get_response(self, query: QueryRequest) -> AsyncIterable[PartialResponse]:
-        async for msg in stream_request(query, "ChatGPT", query.access_key):
+        async for msg in stream_request(query, "GPT-3.5-Turbo", query.access_key):
             yield msg
 
     async def get_settings(self, setting: SettingsRequest) -> SettingsResponse:
         return SettingsResponse(
-            server_bot_dependencies={"ChatGPT": 1}
+            server_bot_dependencies={"GPT-3.5-Turbo": 1}
         )
 ```
 
-Now, before you use the bot, you will have to follow the steps in [this](updating-bot-settings.md) article in order to get Poe to fetch your bots settings. Once that is done, try to use your bot on Poe and you will see the response from ChatGPT. You can modify the code and do more interesting things (like apply some business logic on the response or conditionally call another API).
+Now, before you use the bot, you will have to follow the steps in [this](updating-bot-settings.md) article in order to get Poe to fetch your bots settings. Once that is done, try to use your bot on Poe and you will see the response from GPT-3.5-Turbo. You can modify the code and do more interesting things (like apply some business logic on the response or conditionally call another API).

@@ -51,8 +51,6 @@ The text may also be split into more or fewer individual events as desired. Send
 * Check out our [quick start](https://github.com/poe-platform/server-bot-quick-start) to promptly get a bot running.
 * Tools:
   * [fastapi-poe](https://github.com/poe-platform/poe-protocol/blob/main/fastapi\_poe), a library for building Poe bots using the FastAPI framework. We recommend using this library if you are building your own bot.
-  * [aiohttp-poe](https://github.com/poe-platform/poe-protocol/blob/main/aiohttp\_poe), a similar library built on top of aiohttp
-  * [langchain-poe](https://github.com/poe-platform/poe-protocol/blob/main/langchain\_poe), an example bot built on top of ChatGPT using [LangChain](https://github.com/hwchase17/langchain)
   * [Poe Simulator](https://github.com/poe-platform/poe-protocol/blob/main/simulator\_poe), a simulated Poe server for testing your bots.
 * Example bots:
   * [HerokuCat](https://poe.com/HerokuCat), a demo bot to demonstrate the features of the protocol.
