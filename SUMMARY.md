@@ -1,7 +1,5 @@
 # Table of contents
 
-## Overview
-
 * [Welcome to Poe for Developers](README.md)
 
 ## Prompt Bots
