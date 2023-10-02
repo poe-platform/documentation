@@ -25,4 +25,5 @@
 
 ## Resources
 
+* [How to get distribution](resources/how-to-get-distribution.md)
 * [How to contact us](resources/how-to-contact-us.md)
