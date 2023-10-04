@@ -27,3 +27,5 @@
 
 * [How to get distribution](resources/how-to-get-distribution.md)
 * [How to contact us](resources/how-to-contact-us.md)
+* [Frequently asked questions](resources/frequently-asked-questions.md)
+* [API Terms](https://poe.com/api\_terms)
