@@ -71,7 +71,7 @@ pip install fastapi_poe
 
 #### Get your API Key
 
-Navigate to [poe.com/developers](https://poe.com/developers) and copy your API key which you will need in the next step. Note that access to your api key is currently limited to subscribers to minimize abuse.
+Navigate to [poe.com/developers](https://poe.com/developers) and copy your API key which you will need in the next step. Note that access to an API key is currently limited to subscribers to minimize abuse.
 
 <figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
