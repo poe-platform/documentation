@@ -84,6 +84,6 @@ from fastapi_poe.client import get_bot_response
 
 message = ProtocolMessage(role="user", content="Hello world")
 async for partial in get_bot_response(messages=[message], bot_name="GPT-3.5-Turbo", api_key=<api_key>): 
-    print(stuff)
+    print(partial)
 ```
 {% endcode %}
