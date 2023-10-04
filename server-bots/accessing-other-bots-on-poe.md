@@ -59,9 +59,9 @@ class GPT35TurboBot(PoeBot):
 
 Now, before you use the bot, you will have to follow the steps in [this](updating-bot-settings.md) article in order to get Poe to fetch your bots settings. Once that is done, try to use your bot on Poe and you will see the response from GPT-3.5-Turbo. You can modify the code and do more interesting things (like apply some business logic on the response or conditionally call another API).
 
-### How to access the bot query API directly?
+### How to access the bot query API directly
 
-We also provide a helper function for you to experience and tinker with the bot query API in a lower friction manner.&#x20;
+We also provide a helper function for you to test the bot query API in a lower friction manner.&#x20;
 
 #### Install the Poe FastAPI client
 
@@ -71,7 +71,7 @@ pip install fastapi_poe
 
 #### Get your API Key
 
-Navigate to [poe.com/developers](https://poe.com/developers) and copy your API key which you will need in the next step. Note that access to an API key is currently limited to subscribers to minimize abuse.
+Navigate to [poe.com/developers](https://poe.com/developers) and copy your API key. Note that access to an API key is currently limited to Poe subscribers to minimize abuse.
 
 <figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
