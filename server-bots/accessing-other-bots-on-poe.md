@@ -6,15 +6,13 @@ The Poe bot query API allows developers to invoke other bots on Poe (which inclu
 If you are just getting started with server bots, we recommend checking out our [quick start](quick-start.md) guide. The following tutorial is specifically for how you invoke other bots and assumes that you are familiar with the concept of server bots.
 {% endhint %}
 
-### Install the Poe FastAPI client
+#### Install the Poe FastAPI client
 
 ```bash
 pip install fastapi_poe
 ```
 
-### Implement the PoeBot class&#x20;
-
-#### Define what bots you want to use
+#### Implement the PoeBot class&#x20;
 
 You have to declare your bot dependencies using the [settings](poe-protocol-specification/requests/settings.md) endpoint.&#x20;
 
@@ -60,3 +58,32 @@ class GPT35TurboBot(PoeBot):
 ```
 
 Now, before you use the bot, you will have to follow the steps in [this](updating-bot-settings.md) article in order to get Poe to fetch your bots settings. Once that is done, try to use your bot on Poe and you will see the response from GPT-3.5-Turbo. You can modify the code and do more interesting things (like apply some business logic on the response or conditionally call another API).
+
+### How to access the bot query API directly?
+
+We also provide a helper function for you to experience and tinker with the bot query API in a lower friction manner.&#x20;
+
+#### Install the Poe FastAPI client
+
+```bash
+pip install fastapi_poe
+```
+
+#### Get your API Key
+
+Navigate to [poe.com/developers](https://poe.com/developers) and copy your API key which you will need in the next step. Note that access to your api key is currently limited to subscribers to minimize abuse.
+
+<figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+
+#### Access the bot query API using "get\_bot\_response"
+
+{% code overflow="wrap" %}
+```python
+from fastapi_poe.types import ProtocolMessage
+from fastapi_poe.client import get_bot_response
+
+message = ProtocolMessage(role="user", content="Hello world")
+async for partial in get_bot_response(messages=[message], bot_name="GPT-3.5-Turbo", api_key=<api_key>): 
+    print(stuff)
+```
+{% endcode %}
