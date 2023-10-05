@@ -51,9 +51,14 @@ Server-sent events contain a type and data. The Poe API supports several event t
 * `error`: indicates that an error occurred in the bot server. If this event type is received, the server will close the connection and indicate to the user that there was an error communicating with the bot server. The server may retry the request. The data dictionary may contain the following keys:
   * `allow_retry` (boolean): If this is False, the server will not retry the request. If this is True or omitted, the server may retry the request.
   * `text` (string): A message indicating more details about the error. This message will not be shown to the user, but Poe will use it for internal diagnostic purposes. May be omitted.
-  * `error_type` (string): May contain an error type. Specifying an `error_type` allows Poe to handle protocol bot errors similarly to Poe-internal errors. Currently, the only supported error type is `user_message_too_long`.&#x20;
+  * `error_type` (string): May contain an `error_type`. Specifying an `error_type` allows Poe to handle protocol bot errors similarly to Poe-internal errors. See [#supported-error\_types](query.md#supported-error\_types "mention") for more information.
 * `done`: must be the last event in the stream, indicating that the bot response is finished. The server will close the connection after this event is received. The data for this event is currently ignored, but it must be valid JSON.
 
 The bot response must include at least one `text` or `error` event; it is an error to send no response.
 
 If the Poe server receives an event type it does not recognize, it ignores the event.
+
+#### Supported error\_types
+
+* `user_message_too_long`
+  * Raise this if the latest user message is too long for the API bot to handle. This will raise an error to the user.
