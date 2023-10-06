@@ -23,6 +23,7 @@
 * [Accessing other bots on Poe](server-bots/accessing-other-bots-on-poe.md)
 * [Updating bot settings](server-bots/updating-bot-settings.md)
 * [How we cover your costs](server-bots/how-we-cover-your-costs.md)
+* [Examples](server-bots/examples.md)
 
 ## Resources
 
