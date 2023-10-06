@@ -71,9 +71,11 @@ pip install fastapi_poe
 
 #### Get your API Key
 
-Navigate to [poe.com/developers](https://poe.com/developers) and copy your API key. Note that access to an API key is currently limited to Poe subscribers to minimize abuse.
+Navigate to [poe.com/developers](https://poe.com/developers) and copy your user API key. Note that access to an API key is currently limited to Poe subscribers to minimize abuse.
 
 <figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+
+Usage done with this API key will count against your user account's message limits on Poe, so be sure to only use it for testing and not for cases when other people are using your bot.
 
 #### Access the bot query API using "get\_bot\_response"
 
