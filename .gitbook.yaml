@@ -2,3 +2,4 @@ root: ./
 
 redirects:
     api-bots/quick-start: server-bots/quick-start.md
+    resources/poe-hackathon-1-10-7: https://hackathon.poe.com/
