@@ -1,16 +1,16 @@
 # Welcome to Poe for Developers
 
-Poe is a platform for people to discover and chat with AI-powered bots. In addition to providing access to popular bots, Poe allows anyone to create new bots.
+Poe is a platform for people to discover and chat with AI-powered bots. In addition to providing access to popular bots, Poe allows any individual or business to create new bots.
 
 ### Reasons to create a bot on Poe
 
 * **Distribution**: Poe's bot recommendation system allows you to reach a large audience for your bot for free. Users can also conveniently share a chat with your bot both internally on Poe and externally, leading to even more exposure for your bot.
-* **Monetization**: Poe lets you easily [generate revenue](resources/creator-monetization.md) from users all around the world. You can set a price per message and also get referral fees when your bot causes new users to subscribe to Poe.
+* **Monetization**: Poe lets you easily [generate revenue](resources/creator-monetization.md) from users all around the world. You can set a price per message that you'll be paid for every message to your bot, and you can also get referral fees when your bot causes new users to subscribe to Poe.
 * **Costs**: Operating a publicly available bot powered by large language models is prohibitively expensive for most, but creating a bot on Poe allows you to [offload model inference costs entirely to Poe](server-bots/how-we-cover-your-costs.md).
 * **Multi-platform UI**: Poe's native presence on all major platforms (Web, iOS, Android, MacOS, etc) means that your users have a great, consistent experience with your bot no matter what device they are on, with login and synchronized history taken care of by the platform.
 * **Model independence**: Building on Poe lets you build your product using models from all different providers (OpenAI, Anthropic, Google, and open source models like Llama 2 or SDXL). Poe is a neutral platform and so by building here, you can continually adapt your product use any combination of the best technologies as they are created, no matter who each one is made by.
 
-In summary, Poe lets developers focus entirely on the unique part of their bot: how it will respond. The platform handles everything else needed to bring it to a large audience and to operate it at scale, both now and as AI progress continues.
+In summary, Poe lets developers focus entirely on the unique part of their bot: how it will respond. The platform handles everything else needed to bring it to a large audience, to operate it at scale, and to build a business.
 
 ### Ways to create a bot on Poe
 
