@@ -88,8 +88,8 @@ class PDFSizeBot(PoeBot):
     async def get_settings(self, setting: SettingsRequest) -> SettingsResponse:
         return SettingsResponse(allow_attachments=True)
     
-
-image = Image.debian_slim().pip_install_from_requirements("requirements.txt")
+REQUIREMENTS = ["fastapi-poe==0.0.23", "PyPDF2==3.0.1", "requests==2.31.0"]
+image = Image.debian_slim().pip_install(*REQUIREMENTS)
 stub = Stub("pdf-count-poe-bot")
 
 @stub.function(image=image)
@@ -98,15 +98,6 @@ def fastapi_app():
     bot = PDFSizeBot()
     app = make_app(bot, allow_without_key=True)
     return app
-```
-
-The requirements.txt file is as follows:
-
-```pip-requirements
-fastapi-poe==0.0.23
-pydantic>=2
-PyPDF2==3.0.1
-requests==2.31.0
 ```
 
 To learn how to setup Modal, please follow Steps 1 and 2 in our [Quick start](quick-start.md). If you already have Modal set up, simply run `modal deploy main.py`. Modal will then deploy your bot server to the cloud and output the server url. Use that url when creating a server bot on [Poe](https://poe.com/create\_bot?server=1). Once your bot is up, update your bot's settings by following [this](updating-bot-settings.md) guide. That's it, your bot is now ready.
