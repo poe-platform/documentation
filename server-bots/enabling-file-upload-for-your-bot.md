@@ -1,15 +1,13 @@
 # Enabling file upload for your bot
 
-The Poe API allows you to enable file upload for your bot. This allows your bot to do more interesting things that would be possible using chat input alone. As part of this tutorial, we will create a very simple chatbot that takes in a pdf input and computes the number of pages in the pdf for the user.
-
-To enable file upload, you have to override `get_settings` and set the parameter called `allow_attachments` to `True`.
+The Poe API allows your bot to takes files as input. This means that your bot can do more interesting things than what would be possible using chat input alone. As part of this tutorial, we will create a very simple chatbot that takes in a pdf input and computes the number of pages in the pdf for the user. To enable file upload, you have to override `get_settings` and set the parameter called `allow_attachments` to `True`.
 
 ```python
     async def get_settings(self, setting: SettingsRequest) -> SettingsResponse:
         return SettingsResponse(allow_attachments=True)
 ```
 
-Poe uploads any attachments provided by the user to its storage and passes the url of the file along with other metadata like name and type on to the bot server. We will utilize a python library called `pypdf2` (which you can install using `pip install pypdf2`) to parse the pdf and count the number of pages. We will use the `requests` library (which you can install using `pip install requests`) to download the file.
+Poe uploads any attachments provided by the user to its storage and passes the url of the file along with other metadata such as name and type  to the bot server. We will utilize a python library called `pypdf2` (which you can install using `pip install pypdf2`) to parse the pdf and count the number of pages. We will use the `requests` library (which you can install using `pip install requests`) to download the file.
 
 ```python
 def _fetch_pdf_and_count_num_pages(url: str) -> int:
@@ -100,6 +98,6 @@ def fastapi_app():
     return app
 ```
 
-To learn how to setup Modal, please follow Steps 1 and 2 in our [Quick start](quick-start.md). If you already have Modal set up, simply run `modal deploy main.py`. Modal will then deploy your bot server to the cloud and output the server url. Use that url when creating a server bot on [Poe](https://poe.com/create\_bot?server=1). Once your bot is up, update your bot's settings by following [this](updating-bot-settings.md) guide. That's it, your bot is now ready.
+To learn how to setup Modal, please follow Steps 1 and 2 in our [Quick start](quick-start.md). If you already have Modal set up, simply run `modal deploy main.py`. Modal will then deploy your bot server to the cloud and output the server url. Use that url when creating a server bot on [Poe](https://poe.com/create\_bot?server=1). Once your bot is up, update your bot's settings (one time only after you override `get_settings`) by following [this](updating-bot-settings.md) guide. That's it, your bot is now ready.
 
 <figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
