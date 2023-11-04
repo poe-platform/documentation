@@ -23,11 +23,11 @@
 * [Accessing other bots on Poe](server-bots/accessing-other-bots-on-poe.md)
 * [Updating bot settings](server-bots/updating-bot-settings.md)
 * [How we cover your costs](server-bots/how-we-cover-your-costs.md)
-* [Creator Monetization](server-bots/creator-monetization.md)
 * [Examples](server-bots/examples.md)
 
 ## Resources
 
+* [Creator Monetization](resources/creator-monetization.md)
 * [How to get distribution](resources/how-to-get-distribution.md)
 * [How to contact us](resources/how-to-contact-us.md)
 * [Frequently asked questions](resources/frequently-asked-questions.md)
