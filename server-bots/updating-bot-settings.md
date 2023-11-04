@@ -16,7 +16,7 @@ async def get_settings(self, setting: SettingsRequest) -> SettingsResponse:
 
 You can find this key by going to the bot page and clicking the gear icon.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 #### 3. Make a post request to Poe's refetch settings endpoint with your bot name and access key.
 

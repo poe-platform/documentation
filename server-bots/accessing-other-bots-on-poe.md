@@ -31,12 +31,13 @@ async def get_response(self, query: QueryRequest) -> AsyncIterable[PartialRespon
         yield msg
 ```
 
-Your final code for this basic example should look like this:
+The final code (including the setup code you need to host this on [Modal](https://modal.com/)) that goes into your `main.py` is as follows:
 
 ```python
+from __future__ import annotations
 from typing import AsyncIterable
-
-from fastapi_poe import PoeBot, run
+from modal import Image, Stub, asgi_app
+from fastapi_poe import PoeBot, make_app
 from fastapi_poe.client import stream_request
 from fastapi_poe.types import (
     PartialResponse,
@@ -44,7 +45,6 @@ from fastapi_poe.types import (
     SettingsRequest,
     SettingsResponse,
 )
-
 
 class GPT35TurboBot(PoeBot):
     async def get_response(self, query: QueryRequest) -> AsyncIterable[PartialResponse]:
@@ -55,9 +55,24 @@ class GPT35TurboBot(PoeBot):
         return SettingsResponse(
             server_bot_dependencies={"GPT-3.5-Turbo": 1}
         )
+    
+REQUIREMENTS = ["fastapi-poe==0.0.23"]
+image = Image.debian_slim().pip_install(*REQUIREMENTS)
+stub = Stub("turbo-test-poe-bot")
+
+@stub.function(image=image)
+@asgi_app()
+def fastapi_app():
+    bot = GPT35TurboBot()
+    app = make_app(bot, allow_without_key=True)
+    return app
 ```
 
+To learn how to setup Modal, please follow Steps 1 and 2 in our [Quick start](quick-start.md). If you already have Modal set up, simply run `modal deploy main.py`. Modal will then deploy your bot server to the cloud and output the server url. Use that url when creating a server bot on [Poe](https://poe.com/create\_bot?server=1).&#x20;
+
 Now, before you use the bot, you will have to follow the steps in [this](updating-bot-settings.md) article in order to get Poe to fetch your bots settings. Once that is done, try to use your bot on Poe and you will see the response from GPT-3.5-Turbo. You can modify the code and do more interesting things (like apply some business logic on the response or conditionally call another API).
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ### How to access the bot query API directly
 
