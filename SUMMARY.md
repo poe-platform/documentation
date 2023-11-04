@@ -12,6 +12,11 @@
 ## Server bots
 
 * [Quick start](server-bots/quick-start.md)
+* [Accessing other bots on Poe](server-bots/accessing-other-bots-on-poe.md)
+* [Enabling file upload for your bot](server-bots/enabling-file-upload-for-your-bot.md)
+* [Updating bot settings](server-bots/updating-bot-settings.md)
+* [How we cover your costs](server-bots/how-we-cover-your-costs.md)
+* [Examples](server-bots/examples.md)
 * [Poe Protocol Specification](server-bots/poe-protocol-specification/README.md)
   * [Concepts](server-bots/poe-protocol-specification/concepts.md)
   * [Requests](server-bots/poe-protocol-specification/requests/README.md)
@@ -20,10 +25,6 @@
     * [report\_feedback](server-bots/poe-protocol-specification/requests/report\_feedback.md)
     * [report\_error](server-bots/poe-protocol-specification/requests/report\_error.md)
   * [Samples and next steps](server-bots/poe-protocol-specification/samples-and-next-steps.md)
-* [Accessing other bots on Poe](server-bots/accessing-other-bots-on-poe.md)
-* [Updating bot settings](server-bots/updating-bot-settings.md)
-* [How we cover your costs](server-bots/how-we-cover-your-costs.md)
-* [Examples](server-bots/examples.md)
 
 ## Resources
 
