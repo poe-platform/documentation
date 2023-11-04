@@ -57,5 +57,8 @@ Once you have a bot running under a publicly accessible URL, it is time to conne
 ## Where to go from here
 
 * One of the advantages of building a bot on Poe is the ability to invoke other Poe bots. In order to learn how to do that check out: [accessing-other-bots-on-poe.md](accessing-other-bots-on-poe.md "mention").
+* Check out other detailed guides that show you how to enable specific features
+  * [enabling-file-upload-for-your-bot.md](enabling-file-upload-for-your-bot.md "mention")
+  * [setting-an-introduction-message.md](setting-an-introduction-message.md "mention")
 * Refer to the [specification](poe-protocol-specification/) to understand the full capabilities offered by Poe server bots.
 * Check out the [fastapi-poe](https://pypi.org/project/fastapi-poe/) library, which you can use as a base for creating Poe bots.
