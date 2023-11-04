@@ -2,7 +2,7 @@
 
 The Poe API allows you to enable file upload for your bot. This allows your bot to do more interesting things that would be possible using chat input alone. As part of this tutorial, we will create a very simple chatbot that takes in a pdf input and computes the number of pages in the pdf for the user.
 
-To enable file upload, you have to override `get_settings` and set the parameter called `allow_attachments` to `True`
+To enable file upload, you have to override `get_settings` and set the parameter called `allow_attachments` to `True`.
 
 ```python
     async def get_settings(self, setting: SettingsRequest) -> SettingsResponse:
@@ -40,7 +40,7 @@ class PDFSizeBot(PoeBot):
                     return
 ```
 
-The final code (including the setup code you need to host this on [Modal](https://modal.com/)) that goes into our `main.py` is as follows:
+The final code (including the setup code you need to host this on [Modal](https://modal.com/)) that goes into your `main.py` is as follows:
 
 ```python
 from __future__ import annotations
