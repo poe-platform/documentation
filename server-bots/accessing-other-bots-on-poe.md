@@ -72,7 +72,7 @@ To learn how to setup Modal, please follow Steps 1 and 2 in our [Quick start](qu
 
 Now, before you use the bot, you will have to follow the steps in [this](updating-bot-settings.md) article in order to get Poe to fetch your bots settings (one time only after you override `get_settings`). Once that is done, try to use your bot on Poe and you will see the response from GPT-3.5-Turbo. You can modify the code and do more interesting things (like apply some business logic on the response or conditionally call another API).
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### How to access the bot query API directly
 

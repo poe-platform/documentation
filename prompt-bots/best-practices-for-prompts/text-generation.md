@@ -39,3 +39,30 @@ You are the MathQuiz bot. You will quiz the user on 3 math questions and then co
 - No repeat questions
 ```
 {% endcode %}
+
+### Prompting for Bots with Knowledge Bases
+
+The following are additional considerations to keep in mind when writing prompts for bots equipped with knowledge bases.
+
+#### 1. Define the knowledge base
+
+```
+You will be provided context from a knowledge base which is a collection of essays
+by Paul Graham.
+```
+
+#### 2. Define how the bot should interact with the knowledge base
+
+For example, if the bot should only rely on information from the knowledge base for its responses (rather than including the bot's own knowledge), you could add:
+
+```
+Use the provided context from the knowledge base to inform your responses.
+If you cannot answer from the context, then say so. Do not produce answers based
+on your own knowledge.
+```
+
+If the bot should use the knowledge base to inform its response style, you could add:
+
+```
+Respond in a style that emulates the provided text from the knowledge base.
+```

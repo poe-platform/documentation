@@ -10,7 +10,7 @@ If you are using a web browser, go to [poe.com](https://poe.com) and click on th
 
 This helps give your bot a distinctive appearance.
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt="" width="254"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt="" width="254"><figcaption></figcaption></figure>
 
 #### Select a bot name
 
@@ -38,6 +38,16 @@ Describe what your bot should do or how it should behave. For more information o
 
 <figure><img src="../.gitbook/assets/image (7).png" alt="" width="563"><figcaption></figcaption></figure>
 
+#### Provide a knowledge base (Optional)
+
+For text generation bots, you can add a knowledge base to provide external information for your bot to reference. Your bot will retrieve relevant parts of the knowledge base for a given user message and use them to inform its response.
+
+A knowledge base consists of one or more knowledge sources which are created from uploaded files or raw text input. Major text file formats (such as .txt, .pdf, .docx, and .html) are supported for file uploads. The size of each knowledge base is limited to 5GB or 30 million characters combined across all knowledge sources.
+
+You can optionally enable "Cite sources" for your bot. This will enable citation UI elements for your bot in addition to instructing the bot to produce in-line citations when appropriate.
+
+<figure><img src="../.gitbook/assets/image.png" alt="" width="563"><figcaption></figcaption></figure>
+
 #### Provide an intro message (Optional)
 
 This is the message that the bot starts with when users land on the bot page. This can be used to explain to the users what the bot does or get necessary information that the bot needs to get started.
@@ -58,7 +68,7 @@ Poe supports GitHub-Flavored Markdown (GFM, specified at [https://github.github.
 
 #### Custom temperature
 
-Allows you to specify the temperature you want to use for your bot. Higher temperatures will introduce more randomness in your bot's responses.
+Allows you to specify the temperature you want to use for your bot. Higher temperatures will introduce more randomness in your bot's responses. Lower temperatures will produce more consistent results, which can be useful for fact-based bots (especially those equipped with a knowledge base).
 
 ## Step 5: Create your bot
 
