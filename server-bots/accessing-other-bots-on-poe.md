@@ -1,6 +1,6 @@
 # Accessing other bots on Poe
 
-The Poe bot query API allows developers to invoke other bots on Poe (which includes bots created by Poe like GPT-3.5-Turbo and Claude-Instant and bots created by other developers) and this access is provided for free so that developers do not have to worry about LLM costs. For every user message, server bot developers get to make up to two calls to another bot of their choice.
+The Poe bot query API allows developers to invoke other bots on Poe (which includes bots created by Poe like GPT-3.5-Turbo and Claude-Instant and bots created by other developers) and this access is provided for free so that developers do not have to worry about LLM costs. For every user message, server bot developers get to make up to ten calls to another bot of their choice as long as there are sufficient message limits of the called bots.
 
 {% hint style="info" %}
 If you are just getting started with server bots, we recommend checking out our [quick start](quick-start.md) guide. The following tutorial is specifically for how you invoke other bots and assumes that you are familiar with the concept of server bots.
