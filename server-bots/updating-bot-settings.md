@@ -7,9 +7,8 @@ The settings endpoint provides a way for you to opt in/out of Poe's features ena
 If you are using the `fastapi_poe` library, then you just need to implement the `get_settings` method in the `PoeBot` class. The following is an example:
 
 ```python
-from fastapi_poe.types import SettingsResponse
-async def get_settings(self, setting: SettingsRequest) -> SettingsResponse:
-    return SettingsResponse(allow_attachments=True)
+async def get_settings(self, setting: fp.SettingsRequest) -> fp.SettingsResponse:
+    return fp.SettingsResponse(allow_attachments=True)
 ```
 
 #### 2. Get your access key

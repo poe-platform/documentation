@@ -5,21 +5,17 @@ The Poe API allows you to embed images in your bot's response using Markdown syn
 ```python
 from typing import AsyncIterable
 from modal import Image, Stub, asgi_app
-from fastapi_poe import PoeBot, make_app
-from fastapi_poe.types import (
-    PartialResponse,
-    QueryRequest,
-)
+import fastapi_poe as fp
 
 IMAGE_URL = "https://images.pexels.com/photos/46254/leopard-wildcat-big-cat-botswana-46254.jpeg"
 
-class SampleImageResponseBot(PoeBot):
+class SampleImageResponseBot(fp.PoeBot):
     async def get_response(
-        self, request: QueryRequest
-    ) -> AsyncIterable[PartialResponse]:
-        yield PartialResponse(text=f"This is a test image. ![leopard]({IMAGE_URL})")
+        self, request: fp.QueryRequest
+    ) -> AsyncIterable[fp.PartialResponse]:
+        yield fp.PartialResponse(text=f"This is a test image. ![leopard]({IMAGE_URL})")
     
-REQUIREMENTS = ["fastapi-poe==0.0.23"]
+REQUIREMENTS = ["fastapi-poe==0.0.24"]
 image = Image.debian_slim().pip_install(*REQUIREMENTS)
 stub = Stub("sample-image-response-bot")
 
@@ -27,7 +23,7 @@ stub = Stub("sample-image-response-bot")
 @asgi_app()
 def fastapi_app():
     bot = SampleImageResponseBot()
-    app = make_app(bot, allow_without_key=True)
+    app = fp.make_app(bot, allow_without_key=True)
     return app
 ```
 

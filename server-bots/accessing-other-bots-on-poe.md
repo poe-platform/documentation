@@ -17,17 +17,19 @@ pip install fastapi_poe
 You have to declare your bot dependencies using the [settings](poe-protocol-specification/requests/settings.md) endpoint.&#x20;
 
 ```python
-async def get_settings(self, setting: SettingsRequest) -> SettingsResponse:
-    return SettingsResponse(
-        server_bot_dependencies={"GPT-3.5-Turbo": 1}
-    )
+async def get_settings(self, setting: fp.SettingsRequest) -> fp.SettingsResponse:
+    return fp.SettingsResponse(server_bot_dependencies={"GPT-3.5-Turbo": 1})
 ```
 
 In your `get_response` handler, use the `stream_request` function to invoke any bot you want. The following is example where we `GPT-3.5-Turbo` with the query passed by the user and return the result.
 
 ```python
-async def get_response(self, query: QueryRequest) -> AsyncIterable[PartialResponse]:
-    async for msg in stream_request(query, "GPT-3.5-Turbo", query.access_key):
+async def get_response(
+    self, request: fp.QueryRequest
+) -> AsyncIterable[fp.PartialResponse]:
+    async for msg in fp.stream_request(
+        request, "GPT-3.5-Turbo", request.access_key
+    ):
         yield msg
 ```
 
@@ -37,26 +39,21 @@ The final code (including the setup code you need to host this on [Modal](https:
 from __future__ import annotations
 from typing import AsyncIterable
 from modal import Image, Stub, asgi_app
-from fastapi_poe import PoeBot, make_app
-from fastapi_poe.client import stream_request
-from fastapi_poe.types import (
-    PartialResponse,
-    QueryRequest,
-    SettingsRequest,
-    SettingsResponse,
-)
+import fastapi_poe as fp
 
-class GPT35TurboBot(PoeBot):
-    async def get_response(self, query: QueryRequest) -> AsyncIterable[PartialResponse]:
-        async for msg in stream_request(query, "GPT-3.5-Turbo", query.access_key):
+class GPT35TurboBot(fp.PoeBot):
+    async def get_response(
+        self, request: fp.QueryRequest
+    ) -> AsyncIterable[fp.PartialResponse]:
+        async for msg in fp.stream_request(
+            request, "GPT-3.5-Turbo", request.access_key
+        ):
             yield msg
 
-    async def get_settings(self, setting: SettingsRequest) -> SettingsResponse:
-        return SettingsResponse(
-            server_bot_dependencies={"GPT-3.5-Turbo": 1}
-        )
+    async def get_settings(self, setting: fp.SettingsRequest) -> fp.SettingsResponse:
+        return fp.SettingsResponse(server_bot_dependencies={"GPT-3.5-Turbo": 1})
     
-REQUIREMENTS = ["fastapi-poe==0.0.23"]
+REQUIREMENTS = ["fastapi-poe==0.0.24"]
 image = Image.debian_slim().pip_install(*REQUIREMENTS)
 stub = Stub("turbo-test-poe-bot")
 
@@ -64,7 +61,7 @@ stub = Stub("turbo-test-poe-bot")
 @asgi_app()
 def fastapi_app():
     bot = GPT35TurboBot()
-    app = make_app(bot, allow_without_key=True)
+    app = fp.make_app(bot, allow_without_key=True)
     return app
 ```
 
@@ -98,21 +95,20 @@ In your python shell, run the following after replacing the placeholder with you
 
 ```python
 import asyncio
-from fastapi_poe.types import ProtocolMessage
-from fastapi_poe.client import get_bot_response
+import fastapi_poe as fp
 
 # Create an asynchronous function to encapsulate the async for loop
-async def get_responses(api_key):
-    message = ProtocolMessage(role="user", content="Hello world")
-    async for partial in get_bot_response(messages=[message], bot_name="GPT-3.5-Turbo", api_key=api_key):
+async def get_responses(api_key, messages):
+    async for partial in fp.get_bot_response(messages=messages, bot_name="GPT-3.5-Turbo", api_key=api_key):
         print(partial)
-
+ 
 # Replace <api_key> with your actual API key, ensuring it is a string.
-api_key = "your_api_key_here"
+api_key = <api_key>
+message = fp.ProtocolMessage(role="user", content="Hello world")
 
 # Run the event loop
 # For Python 3.7 and newer
-asyncio.run(get_responses(api_key))
+asyncio.run(get_responses(api_key, [message]))
 
 # For Python 3.6 and older, you would typically do the following:
 # loop = asyncio.get_event_loop()
@@ -123,10 +119,9 @@ asyncio.run(get_responses(api_key))
 If you are using an ipython shell, you can instead use the following simpler code.
 
 ```python
-from fastapi_poe.types import ProtocolMessage
-from fastapi_poe.client import get_bot_response
+import fastapi_poe as fp
 
-message = ProtocolMessage(role="user", content="Hello world")
-async for partial in get_bot_response(messages=[message], bot_name="GPT-3.5-Turbo", api_key=<api_key>): 
+message = fp.ProtocolMessage(role="user", content="Hello world")
+async for partial in fp.get_bot_response(messages=[message], bot_name="GPT-3.5-Turbo", api_key=<api_key>): 
     print(partial)
 ```

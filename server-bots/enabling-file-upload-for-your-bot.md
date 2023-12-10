@@ -3,8 +3,8 @@
 The Poe API allows your bot to takes files as input. This means that your bot can do more interesting things than what would be possible using chat input alone. As part of this tutorial, we will create a very simple chatbot that takes in a pdf input and computes the number of pages in the pdf for the user. To enable file upload, you have to override `get_settings` and set the parameter called `allow_attachments` to `True`.
 
 ```python
-    async def get_settings(self, setting: SettingsRequest) -> SettingsResponse:
-        return SettingsResponse(allow_attachments=True)
+async def get_settings(self, setting: fp.SettingsRequest) -> fp.SettingsResponse:
+    return fp.SettingsResponse(allow_attachments=True)
 ```
 
 Poe uploads any attachments provided by the user to its storage and passes the url of the file along with other metadata such as name and type  to the bot server. We will utilize a python library called `pypdf2` (which you can install using `pip install pypdf2`) to parse the pdf and count the number of pages. We will use the `requests` library (which you can install using `pip install requests`) to download the file.
@@ -23,18 +23,18 @@ def _fetch_pdf_and_count_num_pages(url: str) -> int:
 Now we will set up a bot class that will iterate through the user messages and identify the latest pdf file to compute the number of pages for.
 
 ```python
-class PDFSizeBot(PoeBot):
+class PDFSizeBot(fp.PoeBot):
     async def get_response(
-        self, request: QueryRequest
-    ) -> AsyncIterable[PartialResponse]:
+        self, request: fp.QueryRequest
+    ) -> AsyncIterable[fp.PartialResponse]:
         for message in reversed(request.query):
             for attachment in message.attachments:
                 if attachment.content_type == "application/pdf":
                     try:
                         num_pages = _fetch_pdf_and_count_num_pages(attachment.url)
-                        yield PartialResponse(text=f"{attachment.name} has {num_pages} pages")
+                        yield fp.PartialResponse(text=f"{attachment.name} has {num_pages} pages")
                     except FileDownloadError:
-                        yield PartialResponse(text="Failed to retrieve the document.")
+                        yield fp.PartialResponse(text="Failed to retrieve the document.")
                     return
 ```
 
@@ -45,15 +45,9 @@ from __future__ import annotations
 from typing import AsyncIterable
 import requests
 from PyPDF2 import PdfReader
+import fastapi_poe as fp
 
 from modal import Image, Stub, asgi_app
-from fastapi_poe import PoeBot, make_app
-from fastapi_poe.types import (
-    PartialResponse,
-    QueryRequest,
-    SettingsRequest,
-    SettingsResponse,
-)
 
 class FileDownloadError(Exception):
     pass
@@ -69,24 +63,24 @@ def _fetch_pdf_and_count_num_pages(url: str) -> int:
     return len(reader.pages)
 
 
-class PDFSizeBot(PoeBot):
+class PDFSizeBot(fp.PoeBot):
     async def get_response(
-        self, request: QueryRequest
-    ) -> AsyncIterable[PartialResponse]:
+        self, request: fp.QueryRequest
+    ) -> AsyncIterable[fp.PartialResponse]:
         for message in reversed(request.query):
             for attachment in message.attachments:
                 if attachment.content_type == "application/pdf":
                     try:
                         num_pages = _fetch_pdf_and_count_num_pages(attachment.url)
-                        yield PartialResponse(text=f"{attachment.name} has {num_pages} pages")
+                        yield fp.PartialResponse(text=f"{attachment.name} has {num_pages} pages")
                     except FileDownloadError:
-                        yield PartialResponse(text="Failed to retrieve the document.")
+                        yield fp.PartialResponse(text="Failed to retrieve the document.")
                     return
 
-    async def get_settings(self, setting: SettingsRequest) -> SettingsResponse:
-        return SettingsResponse(allow_attachments=True)
+    async def get_settings(self, setting: fp.SettingsRequest) -> fp.SettingsResponse:
+        return fp.SettingsResponse(allow_attachments=True)
     
-REQUIREMENTS = ["fastapi-poe==0.0.23", "PyPDF2==3.0.1", "requests==2.31.0"]
+REQUIREMENTS = ["fastapi-poe==0.0.24", "PyPDF2==3.0.1", "requests==2.31.0"]
 image = Image.debian_slim().pip_install(*REQUIREMENTS)
 stub = Stub("pdf-count-poe-bot")
 
@@ -94,7 +88,7 @@ stub = Stub("pdf-count-poe-bot")
 @asgi_app()
 def fastapi_app():
     bot = PDFSizeBot()
-    app = make_app(bot, allow_without_key=True)
+    app = fp.make_app(bot, allow_without_key=True)
     return app
 ```
 

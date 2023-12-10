@@ -3,10 +3,10 @@
 The Poe API allows you to set a friendly introduction message for your bot, providing you with a way to instruct the users on how they should use the bot. In order to do so, you have to override `get_settings` and set the parameter called `introduction_message` to whatever you want that message to be.
 
 ```python
-    async def get_settings(self, setting: SettingsRequest) -> SettingsResponse:
-        return SettingsResponse(
-            introduction_message="Welcome to the trivia bot. Please provide me a topic that you would like me to quiz you on."
-        )
+async def get_settings(self, setting: fp.SettingsRequest) -> fp.SettingsResponse:
+    return fp.SettingsResponse(
+        introduction_message="Welcome to the trivia bot. Please provide me a topic that you would like me to quiz you on."
+    )
 ```
 
 The final code (including the setup code you need to host this on [Modal](https://modal.com/)) that goes into our `main.py` is as follows:
@@ -15,25 +15,19 @@ The final code (including the setup code you need to host this on [Modal](https:
 from __future__ import annotations
 from typing import AsyncIterable
 from modal import Image, Stub, asgi_app
-from fastapi_poe import PoeBot, make_app
-from fastapi_poe.types import (
-    PartialResponse,
-    QueryRequest,
-    SettingsRequest,
-    SettingsResponse,
-)
+import fastapi_poe as fp
 
-class TriviaBotSample(PoeBot):
-    async def get_response(self, query: QueryRequest) -> AsyncIterable[PartialResponse]:
+class TriviaBotSample(fp.PoeBot):
+    async def get_response(self, query: fp.QueryRequest) -> AsyncIterable[fp.PartialResponse]:
         # implement the trivia bot.
-        yield self.text_event("Bot under construction. Please visit later")
+        yield fp.PartialResponse(text="Bot under construction. Please visit later")
 
-    async def get_settings(self, setting: SettingsRequest) -> SettingsResponse:
-        return SettingsResponse(
+    async def get_settings(self, setting: fp.SettingsRequest) -> fp.SettingsResponse:
+        return fp.SettingsResponse(
             introduction_message="Welcome to the trivia bot. Please provide me a topic that you would like me to quiz you on."
         )
     
-REQUIREMENTS = ["fastapi-poe==0.0.23"]
+REQUIREMENTS = ["fastapi-poe==0.0.24"]
 image = Image.debian_slim().pip_install(*REQUIREMENTS)
 stub = Stub("trivia-test-poe-bot")
 
@@ -41,7 +35,7 @@ stub = Stub("trivia-test-poe-bot")
 @asgi_app()
 def fastapi_app():
     bot = TriviaBotSample()
-    app = make_app(bot, allow_without_key=True)
+    app = fp.make_app(bot, allow_without_key=True)
     return app
 ```
 
