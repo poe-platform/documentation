@@ -39,11 +39,9 @@ In your terminal, run:
 * `git clone https://github.com/poe-platform/server-bot-quick-start`
 * `cd server-bot-quick-start`
 * `pip install -r requirements.txt`
-* `modal deploy main.py`
+* `modal deploy echobot.py`
 
 Modal will now deploy your app and output two urls: a) the endpoint at which your app is hosted b) an internal page where you can monitor your app. You will be using the former to integrate your bot into Poe.
-
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 ## Integrating with Poe
 
@@ -51,13 +49,14 @@ Once you have a bot running under a publicly accessible URL, it is time to conne
 
 ## Iterating on your bot
 
-* For faster iteration on your bot, we recommend using `modal serve main.py`. On running that command, Modal will deploy an ephemeral version of your app which live updates in response to any code change. In addition, any print/debug statements will output to your terminal.
-* Feel free to comment/uncomment any of the other example bots in `main.py` to try them out or build off of them.
+* For faster iteration on your bot, we recommend using Modal's serve command (as in `modal serve echobot.py`). On running that command, Modal will deploy an ephemeral version of your app which live updates in response to any code change. In addition, any print/debug statements will output to your terminal.
+* The README provides a brief description of the other example bots included in the repo. Feel free to iterate upon and/or deploy them.
 
 ## Where to go from here
 
 * One of the advantages of building a bot on Poe is the ability to invoke other Poe bots. In order to learn how to do that check out: [accessing-other-bots-on-poe.md](accessing-other-bots-on-poe.md "mention").
-* Check out other detailed guides that show you how to enable specific features
+* Check out other detailed guides that show you how to enable specific features:
+  * [rendering-an-image-in-the-response.md](rendering-an-image-in-the-response.md "mention")
   * [enabling-file-upload-for-your-bot.md](enabling-file-upload-for-your-bot.md "mention")
   * [setting-an-introduction-message.md](setting-an-introduction-message.md "mention")
 * Refer to the [specification](poe-protocol-specification/) to understand the full capabilities offered by Poe server bots.
