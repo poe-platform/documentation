@@ -29,7 +29,7 @@ class TriviaBotSample(fp.PoeBot):
     
 REQUIREMENTS = ["fastapi-poe==0.0.24"]
 image = Image.debian_slim().pip_install(*REQUIREMENTS)
-stub = Stub("trivia-test-poe-bot")
+stub = Stub("trivia-poe")
 
 @stub.function(image=image)
 @asgi_app()

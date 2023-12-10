@@ -55,7 +55,7 @@ class GPT35TurboBot(fp.PoeBot):
     
 REQUIREMENTS = ["fastapi-poe==0.0.24"]
 image = Image.debian_slim().pip_install(*REQUIREMENTS)
-stub = Stub("turbo-test-poe-bot")
+stub = Stub("turbo-example-poe")
 
 @stub.function(image=image)
 @asgi_app()

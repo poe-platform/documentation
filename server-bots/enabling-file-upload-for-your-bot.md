@@ -82,7 +82,7 @@ class PDFSizeBot(fp.PoeBot):
     
 REQUIREMENTS = ["fastapi-poe==0.0.24", "PyPDF2==3.0.1", "requests==2.31.0"]
 image = Image.debian_slim().pip_install(*REQUIREMENTS)
-stub = Stub("pdf-count-poe-bot")
+stub = Stub("pdf-counter-poe")
 
 @stub.function(image=image)
 @asgi_app()

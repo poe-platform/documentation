@@ -17,7 +17,7 @@ class SampleImageResponseBot(fp.PoeBot):
     
 REQUIREMENTS = ["fastapi-poe==0.0.24"]
 image = Image.debian_slim().pip_install(*REQUIREMENTS)
-stub = Stub("sample-image-response-bot")
+stub = Stub("image-response-poe")
 
 @stub.function(image=image)
 @asgi_app()
