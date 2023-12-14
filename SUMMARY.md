@@ -13,6 +13,7 @@
 
 * [Quick start](server-bots/quick-start.md)
 * [Accessing other bots on Poe](server-bots/accessing-other-bots-on-poe.md)
+* [Using OpenAI function calling](server-bots/using-openai-function-calling.md)
 * [Rendering an image in the response](server-bots/rendering-an-image-in-the-response.md)
 * [Enabling file upload for your bot](server-bots/enabling-file-upload-for-your-bot.md)
 * [Setting an introduction message](server-bots/setting-an-introduction-message.md)
