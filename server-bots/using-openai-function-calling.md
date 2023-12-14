@@ -42,7 +42,7 @@ tools_dict_list = [
 tools = [fp.ToolDefinition(**tools_dict) for tools_dict in tools_dict_list]
 ```
 
-Additionally, you will need to define a dependency of two calls on an OpenAI model of your choice (in this case, the GPT-3.5-Turbo). You need a dependency of two because as part of the OpenAI function calling flow, you need to call OpenAI twice. Adjust this dependency limit if you want to make more than one function calling request while computing your response.
+Additionally, you will need to define a dependency of two calls on an OpenAI model of your choice (in this case, the GPT-3.5-Turbo). You need a dependency of two because as part of the OpenAI function calling [flow](https://platform.openai.com/docs/guides/function-calling/common-use-cases), you need to call OpenAI twice. Adjust this dependency limit if you want to make more than one function calling request while computing your response.
 
 ```python
 async def get_settings(self, setting: fp.SettingsRequest) -> fp.SettingsResponse:
