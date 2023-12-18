@@ -3,12 +3,12 @@
 With the fastapi\_poe library, send file attachments with your bot response by calling `post_message_attachment` within the `get_response` function of your bot.
 
 ```python
-post_message_attachment(self, query_request, file_data, filename, access_key)
+post_message_attachment(self, message_id, file_data, filename, access_key)
 ```
 
 **Parameters**:
 
-* **query\_request** - the current`QueryRequest`object being processed. **Important**: This must be the request that is currently being handled by `get_response`. Attempting to attach files to previously handled requests will fail.
+* **message\_id** - the message id associated with the current`QueryRequest`object being processed. **Important**: This must be the request that is currently being handled by `get_response`. Attempting to attach files to previously handled requests will fail.
 * **file\_data** - the contents of the file to be uploaded. This should be a bytes-like or file object.
 * **filename** - the name of the file to be attached.
 * **access\_key** - the access key for your bot.
