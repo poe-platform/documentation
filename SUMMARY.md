@@ -19,6 +19,7 @@
 * [Enabling file upload for your bot](server-bots/enabling-file-upload-for-your-bot.md)
 * [Setting an introduction message](server-bots/setting-an-introduction-message.md)
 * [Updating bot settings](server-bots/updating-bot-settings.md)
+* [How to access request information](server-bots/how-to-access-request-information.md)
 * [How we cover your costs](server-bots/how-we-cover-your-costs.md)
 * [Examples](server-bots/examples.md)
 * [Poe Protocol Specification](server-bots/poe-protocol-specification/README.md)
