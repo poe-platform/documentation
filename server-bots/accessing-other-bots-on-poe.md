@@ -21,7 +21,7 @@ async def get_settings(self, setting: fp.SettingsRequest) -> fp.SettingsResponse
     return fp.SettingsResponse(server_bot_dependencies={"GPT-3.5-Turbo": 1})
 ```
 
-In your `get_response` handler, use the `stream_request` function to invoke any bot you want. The following is example where we `GPT-3.5-Turbo` with the query passed by the user and return the result.
+In your `get_response` handler, use the `stream_request` function to invoke any bot you want. The following is an example where we forward the user's query to `GPT-3.5-Turbo` and return the result.
 
 ```python
 async def get_response(
