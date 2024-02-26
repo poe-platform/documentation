@@ -30,7 +30,7 @@ OR
 
 ### **Example**
 
-In this example, the bot will take the input from the user, write it into a text file, and attach that text file in the response to the user. Copy the following code into a file called `main.py` (you can pick any name but the deployment commands that follow assume that this is the file name).
+In this example, the bot will take the input from the user, write it into a text file, and attach that text file in the response to the user. Copy the following code into a file called `main.py` (you can pick any name but the deployment commands that follow assume that this is the file name). Change the `access_key` stub with your actual key that you can generate on the [create bot](https://poe.com/create\_bot) page.
 
 ```python
 from __future__ import annotations
