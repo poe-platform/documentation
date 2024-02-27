@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Welcome to Poe for Developers](README.md)
+* [Welcome to Poe for Creators](README.md)
 
 ## Prompt Bots
 
