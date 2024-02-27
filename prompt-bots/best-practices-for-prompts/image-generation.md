@@ -47,7 +47,7 @@ dog, cartoon --no cat, color
 
 ### Templating
 
-Poe also supports Jinja templating for image generation bots to provide bot developers with flexibility over how style prompts and user prompts get merged.
+Poe also supports Jinja templating for image generation bots to provide bot creators with flexibility over how style prompts and user prompts get merged.
 
 Specifically, specify a `{{user_prompt}}` in either (or both!) of the style prompt and negative prompts to indicate where the user's prompt and negative prompts should go, respectively.
 

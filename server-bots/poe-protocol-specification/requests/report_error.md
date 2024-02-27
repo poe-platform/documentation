@@ -1,6 +1,6 @@
 # report\_error
 
-When the bot server fails to use the protocol correctly (e.g., when it uses the wrong types in response to a `settings` request, the Poe server may make a `report_error` request to the server that reports what went wrong. The protocol does not guarantee that the endpoint will be called for every error; it is merely intended as a convenience to help bot server developers debug their bot.
+When the bot server fails to use the protocol correctly (e.g., when it uses the wrong types in response to a `settings` request, the Poe server may make a `report_error` request to the server that reports what went wrong. The protocol does not guarantee that the endpoint will be called for every error; it is merely intended as a convenience to help bot server creators debug their bot.
 
 This request takes the following additional parameters:
 

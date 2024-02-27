@@ -13,7 +13,7 @@ The characters before the hyphen are a tag that represents the type of the objec
 
 ### Authentication
 
-While creating a bot, a developer can provide an access key consisting of 32 ASCII characters. To allow bot servers to confirm that the requests come from Poe, all requests will have an Authorization HTTP header “Bearer \<access\_key>”.
+While creating a bot, a creator can provide an access key consisting of 32 ASCII characters. To allow bot servers to confirm that the requests come from Poe, all requests will have an Authorization HTTP header “Bearer \<access\_key>”.
 
 ### Content types
 

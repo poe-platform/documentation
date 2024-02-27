@@ -3,7 +3,7 @@
 These bots are all server bots built on the API. You can try each of them live in Poe by clicking the link.
 
 * [**Web search**](https://poe.com/Web-Search)
-  * This bot conducts web searches and then uses GPT-3.5 via the [bot query API](accessing-other-bots-on-poe.md) to write an answer informed by the searches. This bot is an official bot operated by Poe, built entirely on the same API we make available to developers.
+  * This bot conducts web searches and then uses GPT-3.5 via the [bot query API](accessing-other-bots-on-poe.md) to write an answer informed by the searches. This bot is an official bot operated by Poe, built entirely on the same API we make available to creators.
 * [**FW-Mistral-7b**](https://poe.com/fw-mistral-7b)
   * Created by [Fireworks](https://www.fireworks.ai/), this bot provides access to [Mistral 7b](https://mistral.ai/news/announcing-mistral-7b/).
 * [**YouTube Summarizer**](https://poe.com/YouTubeSummarizer)
