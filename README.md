@@ -1,6 +1,6 @@
-# Welcome to Poe for Creators
+# Welcome to Poe for Developers
 
-Poe is a platform for people to discover and chat with AI-powered bots. In addition to providing access to popular bots, Poe allows any individual or business to create new bots.
+Poe is a platform for people to discover and chat with AI-powered bots. In addition to providing access to popular bots, Poe allows any individual or business to create new bots
 
 ### Reasons to create a bot on Poe
 
