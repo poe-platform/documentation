@@ -1,6 +1,6 @@
 # Accessing other bots on Poe
 
-The Poe bot query API allows developers to invoke other bots on Poe (which includes bots created by Poe like GPT-3.5-Turbo and Claude-Instant and bots created by other developers) and this access is provided for free so that developers do not have to worry about LLM costs. For every user message, server bot developers get to make up to ten calls to another bot of their choice.
+The Poe bot query API allows creators to invoke other bots on Poe (which includes bots created by Poe like GPT-3.5-Turbo and Claude-Instant and bots created by other creators) and this access is provided for free so that creators do not have to worry about LLM costs. For every user message, server bot creators get to make up to ten calls to another bot of their choice.
 
 {% hint style="info" %}
 If you are just getting started with server bots, we recommend checking out our [quick start](quick-start.md) guide. The following tutorial is specifically for how you invoke other bots and assumes that you are familiar with the concept of server bots.
@@ -83,7 +83,7 @@ pip install fastapi_poe
 
 #### Get your API Key
 
-Navigate to [poe.com/developers](https://poe.com/developers) and copy your user API key. Note that access to an API key is currently limited to Poe subscribers to minimize abuse.
+Navigate to [poe.com/api_key](https://poe.com/api_key) and copy your user API key. Note that access to an API key is currently limited to Poe subscribers to minimize abuse.
 
 <figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 

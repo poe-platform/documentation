@@ -1,6 +1,6 @@
 # Poe Protocol Specification
 
-[Poe](https://poe.com/) is a platform for interacting with AI-based bots. Poe provides access to popular chat bots like OpenAI's GPT-3.5-Turbo and Anthropic's Claude, but also allows a developer to create their own bot by implementing the following protocol.
+[Poe](https://poe.com/) is a platform for interacting with AI-based bots. Poe provides access to popular chat bots like OpenAI's GPT-3.5-Turbo and Anthropic's Claude, but also allows a creator to create their own bot by implementing the following protocol.
 
 ## Introduction
 
@@ -13,5 +13,5 @@ See [Quick start](../quick-start.md) for a high-level introduction to running a 
 ### Terminology
 
 * _**Poe server**:_ server run by Poe that receives client requests, turns them into requests to bot servers, and streams the response back to the Poe client.
-* _**Bot server**:_ server run by the developer that respond to requests from Poe servers. The responses are ultimately shown to users in their Poe client.
+* _**Bot server**:_ server run by the creator that responds to requests from Poe servers. The responses are ultimately shown to users in their Poe client.
 
