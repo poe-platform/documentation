@@ -47,8 +47,7 @@ The following are additional considerations to keep in mind when writing prompts
 #### 1. Define the knowledge base
 
 ```
-You will be provided retrieved documents from a collection of essays
-by Paul Graham.
+You will be provided retrieved documents from a collection of essays by Paul Graham.
 ```
 
 #### 2. Define how the bot should interact with the knowledge base
