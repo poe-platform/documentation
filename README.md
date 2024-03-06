@@ -1,3 +1,5 @@
+**Note**: This repository has been archived. To access Poe creator documentation, please visit: https://creator.poe.com/
+
 # Welcome to Poe for Creators
 
 Poe is a platform for people to discover and chat with AI-powered bots. In addition to providing access to popular bots, Poe allows any individual or business to create new bots.
